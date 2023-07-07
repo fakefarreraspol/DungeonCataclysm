@@ -8,9 +8,16 @@ public class PlayerShooter : MonoBehaviour
     private CustomInput shootInput = null;
 
     private Vector2 shootVector = Vector2.zero;
+
     
+
+    //Shooting
     [SerializeField]
     private GameObject bullet;
+    private bool isPlayerShooting = false;
+    private bool canPlayerShoot = true;
+    [SerializeField]
+    private float shootingROF;
 
     // Update is called once per frame
     private void Awake()
@@ -41,21 +48,43 @@ public class PlayerShooter : MonoBehaviour
     {
         Debug.Log(shootVector);
 
-        
-        
+        if (isPlayerShooting && canPlayerShoot)
+        {
+            ShootBullet();
+        }
+
     }
 
     private void OnShootInputPerformed(InputAction.CallbackContext value)
     {
         shootVector = value.ReadValue<Vector2>();
-        GameObject test = Instantiate(bullet, transform.position, Quaternion.identity); 
-        Rigidbody2D testRB = test.GetComponent<Rigidbody2D>();
-        testRB.velocity = shootVector*30;
+        isPlayerShooting = true;
 
-        Destroy(test, 2);
     }
     private void OnShootInputCancelled(InputAction.CallbackContext value)
     {
         shootVector = Vector2.zero;
+
+        isPlayerShooting = false;
+    }
+
+
+
+
+    private void ShootBullet()
+    {
+        GameObject test = Instantiate(bullet, transform.position, Quaternion.identity);
+        Rigidbody2D testRB = test.GetComponent<Rigidbody2D>();
+        testRB.velocity = shootVector * 30;
+
+        Destroy(test, 1);
+
+        canPlayerShoot = false;
+        Invoke("DelayBetweenBullets", shootingROF);
+    }
+
+    private void DelayBetweenBullets()
+    {
+        canPlayerShoot = true;
     }
 }
