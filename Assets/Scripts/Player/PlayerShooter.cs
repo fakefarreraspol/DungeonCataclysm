@@ -22,7 +22,7 @@ public class PlayerShooter : MonoBehaviour
     // Update is called once per frame
     private void Awake()
     {
-        shootInput = PlayerInput.input;
+        shootInput = PlayerStats.input;
     }
 
     private void OnEnable()
@@ -46,7 +46,7 @@ public class PlayerShooter : MonoBehaviour
     ////////////////////////////////////////
     private void FixedUpdate()
     {
-        Debug.Log(shootVector);
+        //Debug.Log(shootVector);
 
         if (isPlayerShooting && canPlayerShoot)
         {

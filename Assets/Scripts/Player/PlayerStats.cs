@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerInput : MonoBehaviour
+public abstract class PlayerStats : MonoBehaviour
 {
     // Start is called before the first frame update
     public static CustomInput input = new CustomInput();
