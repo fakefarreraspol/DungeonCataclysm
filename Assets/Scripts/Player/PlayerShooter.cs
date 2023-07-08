@@ -18,6 +18,7 @@ public class PlayerShooter : MonoBehaviour
     private bool canPlayerShoot = true;
     [SerializeField]
     private float shootingROF;
+    [SerializeField] private float projectileVelocity;
 
     // Update is called once per frame
     private void Awake()
@@ -75,7 +76,7 @@ public class PlayerShooter : MonoBehaviour
     {
         GameObject test = Instantiate(bullet, transform.position, Quaternion.identity);
         Rigidbody2D testRB = test.GetComponent<Rigidbody2D>();
-        testRB.velocity = shootVector * 30;
+        testRB.velocity = shootVector * projectileVelocity;
 
         Destroy(test, 1);
 
