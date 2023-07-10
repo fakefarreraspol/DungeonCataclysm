@@ -51,6 +51,10 @@ public class Enemy : MonoBehaviour
 
     protected virtual void Move()
     {
+        
+        Debug.Log(Vector3.Distance( transform.position, targetPos.position));
+        
+        
         if(Vector3.Distance(transform.position, targetPos.position) > 0.9)
         {
             transform.position = Vector2.MoveTowards(transform.position, targetPos.position, moveSpeed * Time.deltaTime);
