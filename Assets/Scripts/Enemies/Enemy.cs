@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Enemy : MonoBehaviour
 {
@@ -11,12 +12,25 @@ public class Enemy : MonoBehaviour
 
 
 
-    private Transform target;
+    private PlayerShooter player;
+    private Transform targetPos;
+
+
+
+
+
+
+    /////////////////////
+
+
+    
 
     private void Start()
     {
         healthPoints = maxHealthPoints;
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        
+        player = FindObjectOfType<PlayerShooter>();
+        targetPos = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         
         Introduction();
     }
@@ -32,22 +46,29 @@ public class Enemy : MonoBehaviour
     }
     protected virtual void Introduction()
     {
-        Debug.Log("My Name Is " + enemyName + ", HP: " + healthPoints + ", Speed: " + moveSpeed);
+        Debug.Log(" " + enemyName + ", HP: " + healthPoints + ", Speed: " + moveSpeed);
     }
 
     protected virtual void Move()
     {
-        transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+        if(Vector3.Distance(transform.position, targetPos.position) > 0.9)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, targetPos.position, moveSpeed * Time.deltaTime);
+        }
+        
     }
 
     
-    private void ReceiveDamage(int damage)
+    private void ReceiveDamage(float damage)
     {
         healthPoints -= damage;
     }
     
     private void Death()
     {
+
+        ScoreManager.OnScoreChanged(5);
+
         Destroy(gameObject);
     }
 
@@ -61,7 +82,10 @@ public class Enemy : MonoBehaviour
         if(coll.gameObject.tag == "BaseBullet")
         {
             Destroy(coll.gameObject);
-            ReceiveDamage(20);
+            
+            ReceiveDamage(player.damage);
+            
+
         }
     }
 }

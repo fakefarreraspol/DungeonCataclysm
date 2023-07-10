@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System;
 public class PlayerShooter : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -20,10 +21,30 @@ public class PlayerShooter : MonoBehaviour
     private float shootingROF;
     [SerializeField] private float projectileVelocity;
 
+
+    [SerializeField] public float damage = 20;
+
+    
+    
+    ///////////////////////////////////
+    //////////////////////////////////
+    
+    public static Action OnDamageDone;
+
+
+
+
+
+    private PlayerStats playerStats;
+
     // Update is called once per frame
+
+
+
     private void Awake()
     {
         shootInput = PlayerStats.input;
+        playerStats = FindObjectOfType<PlayerStats>();
     }
 
     private void OnEnable()
@@ -31,11 +52,15 @@ public class PlayerShooter : MonoBehaviour
         shootInput.Enable();
         shootInput.Player.Shoot.performed += OnShootInputPerformed;
         shootInput.Player.Shoot.canceled += OnShootInputCancelled;
+
+        OnDamageDone += DoDamage;
     }
     private void OnDisable()
     {
         shootInput.Player.Shoot.performed -= OnShootInputPerformed;
         shootInput.Player.Shoot.canceled -= OnShootInputCancelled;
+
+        OnDamageDone -= DoDamage;
     }
 
 
@@ -48,6 +73,7 @@ public class PlayerShooter : MonoBehaviour
     private void FixedUpdate()
     {
         //Debug.Log(shootVector);
+        damage += 1;
 
         if (isPlayerShooting && canPlayerShoot)
         {
@@ -87,5 +113,10 @@ public class PlayerShooter : MonoBehaviour
     private void DelayBetweenBullets()
     {
         canPlayerShoot = true;
+    }
+
+    private void DoDamage()
+    {
+        
     }
 }
