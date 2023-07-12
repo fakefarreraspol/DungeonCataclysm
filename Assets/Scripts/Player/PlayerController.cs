@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        moveInput = PlayerStats.input;
+        moveInput = PlayerInput.input;
         rb = GetComponent<Rigidbody2D>();
     }
 

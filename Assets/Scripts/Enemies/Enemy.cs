@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
 
 
 
-    private PlayerShooter player;
+    private Character player;
     private Transform targetPos;
 
 
@@ -29,7 +29,7 @@ public class Enemy : MonoBehaviour
     {
         healthPoints = maxHealthPoints;
         
-        player = FindObjectOfType<PlayerShooter>();
+        player = FindObjectOfType<Character>();
         targetPos = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         
         Introduction();
@@ -52,7 +52,7 @@ public class Enemy : MonoBehaviour
     protected virtual void Move()
     {
         
-        Debug.Log(Vector3.Distance( transform.position, targetPos.position));
+        //Debug.Log(Vector3.Distance( transform.position, targetPos.position));
         
         
         if(Vector3.Distance(transform.position, targetPos.position) > 0.9)
@@ -61,6 +61,19 @@ public class Enemy : MonoBehaviour
         }
         
     }
+
+
+
+    protected virtual void Attack()
+    {
+        
+    }
+
+
+
+
+
+
 
     
     private void ReceiveDamage(float damage)
@@ -87,7 +100,7 @@ public class Enemy : MonoBehaviour
         {
             Destroy(coll.gameObject);
             
-            ReceiveDamage(player.damage);
+            ReceiveDamage(player.chDamage);
             
 
         }
