@@ -49,5 +49,6 @@ public class PlayerController : MonoBehaviour
     private void OnMovementStopped(InputAction.CallbackContext value)
     {
         moveVector = Vector2.zero;
+        PlayerAnimations.OnSpriteChanged(moveVector);
     }
 }

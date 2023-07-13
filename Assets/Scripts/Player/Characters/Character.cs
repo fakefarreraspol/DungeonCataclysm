@@ -34,15 +34,15 @@ public class Character : MonoBehaviour
     private void OnEnable()
     {
         attackInput.Enable();
-        attackInput.Player.Shoot.performed += OnShootInputPerformed;
-        attackInput.Player.Shoot.canceled += OnShootInputCancelled;
+        attackInput.Player.Shoot.performed += OnAttackInputPerformed;
+        attackInput.Player.Shoot.canceled += OnAttackInputCancelled;
 
         
     }
     private void OnDisable()
     {
-        attackInput.Player.Shoot.performed -= OnShootInputPerformed;
-        attackInput.Player.Shoot.canceled -= OnShootInputCancelled;
+        attackInput.Player.Shoot.performed -= OnAttackInputPerformed;
+        attackInput.Player.Shoot.canceled -= OnAttackInputCancelled;
 
         
     }
@@ -87,13 +87,13 @@ public class Character : MonoBehaviour
         canPlayerAttack = true;
     }
 
-    private void OnShootInputPerformed(InputAction.CallbackContext value)
+    private void OnAttackInputPerformed(InputAction.CallbackContext value)
     {
         attackVector = value.ReadValue<Vector2>();
         isPlayerAttacking = true;
 
     }
-    private void OnShootInputCancelled(InputAction.CallbackContext value)
+    private void OnAttackInputCancelled(InputAction.CallbackContext value)
     {
         attackVector = Vector2.zero;
 

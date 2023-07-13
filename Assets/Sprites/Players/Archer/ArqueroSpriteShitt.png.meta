@@ -1,0 +1,1627 @@
+fileFormatVersion: 2
+guid: 094d81a8b0049304580a873bb9e806a5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 736
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60e91b81b8f8704ba1bed95000bfbc8
+      internalID: 452560461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 736
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53eb6aa7919fca142a7ad91199a1982d
+      internalID: -1701471941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 736
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba514274a7e5c8e498afb991c0f4f924
+      internalID: 877559412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_3
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 736
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e464c76a078e9bf48b7bd596ecb73e7f
+      internalID: -396846288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 690
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b8fc858e9f7f5a4593f764621d4b48f
+      internalID: -511931344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_5
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 690
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2749e52689e684b4d86d9d01175995ed
+      internalID: -771553142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_6
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 690
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea2cba54ce66b8438b3f051fc7e75bc
+      internalID: 1696670161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_7
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 690
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf3c074e3cc0754782aa1360308ff17
+      internalID: 283980907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 644
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b59dbabb451d445840886897d45687
+      internalID: 92392100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_9
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 644
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429aa5168d6a15848b6663395626ec24
+      internalID: -474365007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_10
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 644
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85cd5ebd639f73045a711da2ba552caa
+      internalID: -1135826148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_11
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 644
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60de3475401a7d54e9d057167566ef16
+      internalID: -711187205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 598
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 348e6f736a65ccf44816991e4cf762d0
+      internalID: -1986345231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_13
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 598
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be914ccbc76fb1048b7b1dca7d9f35c5
+      internalID: 1611496916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_14
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 598
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2788c8c8f61e3b438c67945f8e34f87
+      internalID: -655762711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_15
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 598
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ccd2bbbf1d709c45b501a49e26302db
+      internalID: -19422008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 552
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5feeacd68a4d1646ba445980710c5fc
+      internalID: 431966375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_17
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 552
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b791eda8e17d40e4a8ca5fb7fbb5b3b3
+      internalID: 34685636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_18
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 552
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f31caea09b5094092c6657e990f13c
+      internalID: -1816116171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_19
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 552
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f10d8e5584c89c43bd3415e329ba0c4
+      internalID: -1860234394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 506
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5e618fcb4be4d44820ce12b2c9f5b6
+      internalID: 1628048496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_21
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 506
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d04a5b4b8c27d4181d5d9765bc86f5
+      internalID: -281857541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_22
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 506
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f94b383c69415c4b82c9a7c31ec41df
+      internalID: 1280305328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_23
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 506
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f02915c8a728484890477f5167ed6c2
+      internalID: -526146833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 460
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a80a53285691c44588ed22b636c368f
+      internalID: 863716687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_25
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 460
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49acd84dd60b28e4d949fee9fe42f076
+      internalID: 1522733767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_26
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 460
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9a1268e26e8f44599ee2251afaac62
+      internalID: -1997138675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_27
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 460
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9c6119ca0f7be4ab0438fdd9c969f0
+      internalID: -191491001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 414
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66d78f41cb73bc4f9817f79a696ed03
+      internalID: -1259851868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_29
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 414
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebbef4559ff3cc24fa96493dbd80fbbd
+      internalID: -1179698665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_30
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 414
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67bcd8cd975699444a2307226d330cb2
+      internalID: 2026308005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_31
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 414
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 885abd69e4d73504dacd129c77bf0b95
+      internalID: 93562384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 368
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d1745da762ca34f9a13194ce939cab
+      internalID: 1585924322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_33
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 368
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e26fd8652694f94fb0b929550478912
+      internalID: 1439698911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_34
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 368
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2933c443edcd6f1488926273f398f7d9
+      internalID: 967847555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_35
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 368
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80833237c0063004aa1f3ff8460fde16
+      internalID: -1372963646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 322
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d30f3b3cf2d6304c85589e1be70d40d
+      internalID: 1559550220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_37
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 322
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da63a50c50dc79c47aa5aad782b3259e
+      internalID: -2133296233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_38
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 322
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61b613cadb57ca41b2c9743440c0f98
+      internalID: 2112019392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_39
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 322
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec3b2ad13191ec458f6397a6d503621
+      internalID: 1732250794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 276
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727f115d75cf3f74fa56e9753c6d8e04
+      internalID: -2039347404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_41
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 276
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278d3a2ce0d76524ebe4bab360e53d85
+      internalID: 51164868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_42
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 276
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb44920fb014e049a101d9b9c0c6273
+      internalID: -2145431417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_43
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 276
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f63e155a7a84b4794a46725f0df420
+      internalID: -1378587264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 230
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 395754b99a4cd584fbbf4ac9e743f119
+      internalID: 1893022171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_45
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 230
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3e9a5e3b15f914cacaba830a4ceadb
+      internalID: -662634753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_46
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 230
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6b8d6dc89f9434eb8f1d0440fec625
+      internalID: 1421811058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_47
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 230
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eb2a48a9b3006240810263a36c73446
+      internalID: -1206781096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 184
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba41ab97b8ea1e45a7788696c5477f4
+      internalID: 1532577193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_49
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 184
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6584dc7fd14aca442b780ab26f730c8d
+      internalID: 200185127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_50
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 184
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98fe04ce363a5e548b13049f7b068ad3
+      internalID: -699134759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_51
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 184
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3682a65912f87ea4f90c7756132fd7ae
+      internalID: 965890700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 138
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f3e76056cec924289760ad522b4f78
+      internalID: -1794556770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_53
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 138
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a57bc8f0b6b904386fd9160f3ded12
+      internalID: -1384357736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_54
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 138
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c3e6df91fd24da4d881828fa3fa8c40
+      internalID: 2093697874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_55
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 138
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a8479b3557e6614a83a8267d5da6f05
+      internalID: 1545606431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 92
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31da1530740e60d4ebd177818ff3c4c1
+      internalID: -1255063666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_57
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 92
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3afc3ac17dc91040b26828323479a5f
+      internalID: 2020474960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_58
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 92
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e46c59b5a9b03c41ad64d9da12854b5
+      internalID: -743558192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_59
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 92
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5cee9256fa7e824994e8854adebc6cb
+      internalID: 1340145858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 46
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97400b5623e253a41befe6555d5afbe2
+      internalID: 640550407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_61
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 46
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aac1ba0860f320468d61d30d7d47a28
+      internalID: -1663662637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_62
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 46
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94de0681fc1709b4e8420954a2990908
+      internalID: 602964518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_63
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 46
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47144f5219fec014b91cafc7b8556990
+      internalID: 1812298345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a877fbb5b816d4c89d489a46a88d1f
+      internalID: 484816414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_65
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 0
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46545951a95683e40ad95b8d644e99d9
+      internalID: 181743832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArqueroSpriteShitt_66
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 0
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a3271e510bc1646b1affc48c8c0b3d
+      internalID: 1114851076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ArqueroSpriteShitt_0: 452560461
+      ArqueroSpriteShitt_1: -1701471941
+      ArqueroSpriteShitt_10: -1135826148
+      ArqueroSpriteShitt_11: -711187205
+      ArqueroSpriteShitt_12: -1986345231
+      ArqueroSpriteShitt_13: 1611496916
+      ArqueroSpriteShitt_14: -655762711
+      ArqueroSpriteShitt_15: -19422008
+      ArqueroSpriteShitt_16: 431966375
+      ArqueroSpriteShitt_17: 34685636
+      ArqueroSpriteShitt_18: -1816116171
+      ArqueroSpriteShitt_19: -1860234394
+      ArqueroSpriteShitt_2: 877559412
+      ArqueroSpriteShitt_20: 1628048496
+      ArqueroSpriteShitt_21: -281857541
+      ArqueroSpriteShitt_22: 1280305328
+      ArqueroSpriteShitt_23: -526146833
+      ArqueroSpriteShitt_24: 863716687
+      ArqueroSpriteShitt_25: 1522733767
+      ArqueroSpriteShitt_26: -1997138675
+      ArqueroSpriteShitt_27: -191491001
+      ArqueroSpriteShitt_28: -1259851868
+      ArqueroSpriteShitt_29: -1179698665
+      ArqueroSpriteShitt_3: -396846288
+      ArqueroSpriteShitt_30: 2026308005
+      ArqueroSpriteShitt_31: 93562384
+      ArqueroSpriteShitt_32: 1585924322
+      ArqueroSpriteShitt_33: 1439698911
+      ArqueroSpriteShitt_34: 967847555
+      ArqueroSpriteShitt_35: -1372963646
+      ArqueroSpriteShitt_36: 1559550220
+      ArqueroSpriteShitt_37: -2133296233
+      ArqueroSpriteShitt_38: 2112019392
+      ArqueroSpriteShitt_39: 1732250794
+      ArqueroSpriteShitt_4: -511931344
+      ArqueroSpriteShitt_40: -2039347404
+      ArqueroSpriteShitt_41: 51164868
+      ArqueroSpriteShitt_42: -2145431417
+      ArqueroSpriteShitt_43: -1378587264
+      ArqueroSpriteShitt_44: 1893022171
+      ArqueroSpriteShitt_45: -662634753
+      ArqueroSpriteShitt_46: 1421811058
+      ArqueroSpriteShitt_47: -1206781096
+      ArqueroSpriteShitt_48: 1532577193
+      ArqueroSpriteShitt_49: 200185127
+      ArqueroSpriteShitt_5: -771553142
+      ArqueroSpriteShitt_50: -699134759
+      ArqueroSpriteShitt_51: 965890700
+      ArqueroSpriteShitt_52: -1794556770
+      ArqueroSpriteShitt_53: -1384357736
+      ArqueroSpriteShitt_54: 2093697874
+      ArqueroSpriteShitt_55: 1545606431
+      ArqueroSpriteShitt_56: -1255063666
+      ArqueroSpriteShitt_57: 2020474960
+      ArqueroSpriteShitt_58: -743558192
+      ArqueroSpriteShitt_59: 1340145858
+      ArqueroSpriteShitt_6: 1696670161
+      ArqueroSpriteShitt_60: 640550407
+      ArqueroSpriteShitt_61: -1663662637
+      ArqueroSpriteShitt_62: 602964518
+      ArqueroSpriteShitt_63: 1812298345
+      ArqueroSpriteShitt_64: 484816414
+      ArqueroSpriteShitt_65: 181743832
+      ArqueroSpriteShitt_66: 1114851076
+      ArqueroSpriteShitt_7: 283980907
+      ArqueroSpriteShitt_8: 92392100
+      ArqueroSpriteShitt_9: -474365007
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
