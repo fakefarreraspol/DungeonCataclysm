@@ -781,6 +781,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: FullTiled_32
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 16
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f8fbd91b2945c4289611b329f8690e
+      internalID: 291333161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -818,6 +839,7 @@ TextureImporter:
       FullTiled_3: -330598710
       FullTiled_30: -1792242499
       FullTiled_31: 259395256
+      FullTiled_32: 291333161
       FullTiled_4: 870145399
       FullTiled_5: -1820179392
       FullTiled_6: 671332412
