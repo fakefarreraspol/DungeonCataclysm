@@ -7,6 +7,7 @@ public class Archer : Character
     [SerializeField] private GameObject arrow;
     public float projectileVelocity;
 
+    private Quaternion arrowRotation;
 
     protected override void Attack()
     {
@@ -16,6 +17,12 @@ public class Archer : Character
 
     private void ShootArrow()
     {
+        
+
+
+
+
+
         GameObject test = Instantiate(arrow, transform.position, Quaternion.identity);
         Rigidbody2D testRB = test.GetComponent<Rigidbody2D>();
         testRB.velocity = attackVector * projectileVelocity;

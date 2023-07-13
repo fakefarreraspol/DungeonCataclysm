@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -106,9 +106,1442 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Arquero1Sheet2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 368
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b77a3aeee882c44baf7c9d2c179f1ff
+      internalID: -1811181948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 368
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edca896f039fe644cb3d365b42d85f14
+      internalID: -748753026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 368
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 722cb96e3f2eaa543b4a8762f83d8938
+      internalID: -525917040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_3
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 368
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e50d983313648a541b15f2726d243663
+      internalID: -1324462684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 345
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c05e660f73cfcf4fb0f47faaa90d6bb
+      internalID: 1970662043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_5
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 345
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e9e99d4faff334b8d52bb229180f53
+      internalID: -826837468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_6
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 345
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4316d77fdb27144da5f3ea68efb180c
+      internalID: 353748511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_7
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 345
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ced399aadad35429dda0e76120b079
+      internalID: -1294284153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 322
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92f95c4e39c9d7f4aba317b550ecc92b
+      internalID: 425538913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_9
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 322
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0d72679184f5947b24bbf146f7e995
+      internalID: 803746524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_10
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 322
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa79dac4b3584b489b29d8b8164942c
+      internalID: -877812072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_11
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 322
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 829c6513dba7fcd41926112df97566d8
+      internalID: -988380353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 299
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27d0733c1736c7408cd2590195fae23
+      internalID: 1250499724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_13
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 299
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f8327ff6b06f9046af711f874eb5767
+      internalID: 1997264244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_14
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 299
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb9e5b00352ab0489dbf0525008bba4
+      internalID: -1946341076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_15
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 299
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb2271d03dee77e489030550af37268c
+      internalID: 458656942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 276
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04d8ff91e90174488342d219d9a4436
+      internalID: -1971030374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_17
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 276
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662bc120fd219434980e59ebb50c6f50
+      internalID: -2029720577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_18
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 276
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c00b719252684aa48b3236db48a05b7b
+      internalID: 1745962941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_19
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 276
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01822b1d38826034c918e1d073bc89ac
+      internalID: -392700776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 253
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd18721273ba3b447bb74c6712e39ff6
+      internalID: -1620409044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_21
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 253
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a71503651daa624195b1abf1ed426ea
+      internalID: 995908801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_22
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 253
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d5d116780e1ec489356e100f61a9fb
+      internalID: -454735081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_23
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 253
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31809bb528f3fec498f6056600e759b7
+      internalID: 2051025432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 230
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03cff345d66f74944aa56382846589e6
+      internalID: -1342293903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_25
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 230
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e283634d52789b4db9f42eb7f9c08d8
+      internalID: 1105458086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_26
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 230
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642f42c7859a5d3449b217228256fbc3
+      internalID: -1493399830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_27
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 230
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e6a807ee6d3aa84586ec826c2b168e1
+      internalID: 668350878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 207
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ba6da112339b54b8266185c186da62
+      internalID: 326645355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_29
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 207
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 183fb0a11e6a9ac49bce04de0a050fa5
+      internalID: 1268695457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_30
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 207
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a68ac2592a8d04e9c213ade4cef523
+      internalID: -581297350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_31
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 207
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b223ddab0e1e5418183a23344bb567
+      internalID: -1667411821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 184
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b288e00a96d74c047b8c534d03ac91f7
+      internalID: -1587988779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_33
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 184
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b03e13ce6b719134488b0db9756e1351
+      internalID: 718077242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_34
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 184
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517b2ab34b4adf64790b5cc80acfa229
+      internalID: -1937381922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_35
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 184
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de062ebf26aab4a459df5772740dd2e4
+      internalID: -1593777163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 161
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6384f0e6de08a340ae47c6a882f0ffc
+      internalID: 2147375164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_37
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 161
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56bda32d4edde4d4b8966bcfd8676b8f
+      internalID: 215740559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_38
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 161
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 066a6bc2947fed142ade62d0d41920dc
+      internalID: 243268742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_39
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 161
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d750d32a93f4988458260140fbd5018b
+      internalID: -298382178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 138
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2fa517499291474f9ab26ec158adb3f
+      internalID: 387385746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_41
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 138
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d30d62fd776fd4946933035607973988
+      internalID: -345906704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_42
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 138
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b8b822c00fd5104197a5263ad81e3da
+      internalID: 1063728668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_43
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 138
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d730ba7e32937d438f4fe656fbb7dfe
+      internalID: 976912058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 115
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e0922e2b04be247bc142ad829831e0
+      internalID: -1172640401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_45
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 115
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc5ae3b1c6f55d1438376679a77b07ae
+      internalID: -630373472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_46
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 115
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53611dc42a74f14d9bab9523720006d
+      internalID: -1110511095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_47
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 115
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5adcd96bbdec32e44b610bafc3eff900
+      internalID: -429983822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 92
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a30aaf54554f341974417a213e65c7
+      internalID: -309225877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_49
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 92
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65cfa8a59e1b79946b36abbe92c31e42
+      internalID: 2021443056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_50
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 92
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d9e47bfb96fa549a3b6d5e0f90090f
+      internalID: 376844904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_51
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 92
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d6a001489c7954a8ccef4f0b5df772
+      internalID: -1793437086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 69
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82da0a2eb19d854983586eb41835c1c
+      internalID: -1662122283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_53
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 69
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8520924f5aecd4298635477b4cd88e
+      internalID: 1353666261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_54
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 69
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee429d096c6f744eabecec76c09ec00
+      internalID: -1042651431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_55
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 69
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a54f2423dce6dc242948bf4a00d9cbca
+      internalID: -1517657523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 46
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f599258ab97414fb0c0c4f5df04bd4
+      internalID: 957913157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_57
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 46
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3560083fc98da1447b9072ca2d7469de
+      internalID: 207535594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_58
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 46
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6903ac642ad66fa44b9c3fcdc8d199d1
+      internalID: -1620040236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_59
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 46
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b867b38556837ec4a9fa2c28e097ddae
+      internalID: -2066800874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 23
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6792b0ff2abd7c49b3efb6a7e560d51
+      internalID: 1246979650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_61
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 23
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9edd35a442e82924c86b3f56c5d9f1e3
+      internalID: 184374817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_62
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 23
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d8c77fb76abadd46be3c3f8130fe87f
+      internalID: -363707056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_63
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 23
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c542f420ca7394d9b1703d770d7d1c
+      internalID: 1154177948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 711c464e0ab128546b7cc55d847c70a6
+      internalID: 574324397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_65
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 0
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29ae25d9cd2af4a4da7b76b4df703b56
+      internalID: -489074422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arquero1Sheet2_66
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 0
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd234af21a6ab841b1edb836356e110
+      internalID: 584684089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +1552,74 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Arquero1Sheet2_0: -1811181948
+      Arquero1Sheet2_1: -748753026
+      Arquero1Sheet2_10: -877812072
+      Arquero1Sheet2_11: -988380353
+      Arquero1Sheet2_12: 1250499724
+      Arquero1Sheet2_13: 1997264244
+      Arquero1Sheet2_14: -1946341076
+      Arquero1Sheet2_15: 458656942
+      Arquero1Sheet2_16: -1971030374
+      Arquero1Sheet2_17: -2029720577
+      Arquero1Sheet2_18: 1745962941
+      Arquero1Sheet2_19: -392700776
+      Arquero1Sheet2_2: -525917040
+      Arquero1Sheet2_20: -1620409044
+      Arquero1Sheet2_21: 995908801
+      Arquero1Sheet2_22: -454735081
+      Arquero1Sheet2_23: 2051025432
+      Arquero1Sheet2_24: -1342293903
+      Arquero1Sheet2_25: 1105458086
+      Arquero1Sheet2_26: -1493399830
+      Arquero1Sheet2_27: 668350878
+      Arquero1Sheet2_28: 326645355
+      Arquero1Sheet2_29: 1268695457
+      Arquero1Sheet2_3: -1324462684
+      Arquero1Sheet2_30: -581297350
+      Arquero1Sheet2_31: -1667411821
+      Arquero1Sheet2_32: -1587988779
+      Arquero1Sheet2_33: 718077242
+      Arquero1Sheet2_34: -1937381922
+      Arquero1Sheet2_35: -1593777163
+      Arquero1Sheet2_36: 2147375164
+      Arquero1Sheet2_37: 215740559
+      Arquero1Sheet2_38: 243268742
+      Arquero1Sheet2_39: -298382178
+      Arquero1Sheet2_4: 1970662043
+      Arquero1Sheet2_40: 387385746
+      Arquero1Sheet2_41: -345906704
+      Arquero1Sheet2_42: 1063728668
+      Arquero1Sheet2_43: 976912058
+      Arquero1Sheet2_44: -1172640401
+      Arquero1Sheet2_45: -630373472
+      Arquero1Sheet2_46: -1110511095
+      Arquero1Sheet2_47: -429983822
+      Arquero1Sheet2_48: -309225877
+      Arquero1Sheet2_49: 2021443056
+      Arquero1Sheet2_5: -826837468
+      Arquero1Sheet2_50: 376844904
+      Arquero1Sheet2_51: -1793437086
+      Arquero1Sheet2_52: -1662122283
+      Arquero1Sheet2_53: 1353666261
+      Arquero1Sheet2_54: -1042651431
+      Arquero1Sheet2_55: -1517657523
+      Arquero1Sheet2_56: 957913157
+      Arquero1Sheet2_57: 207535594
+      Arquero1Sheet2_58: -1620040236
+      Arquero1Sheet2_59: -2066800874
+      Arquero1Sheet2_6: 353748511
+      Arquero1Sheet2_60: 1246979650
+      Arquero1Sheet2_61: 184374817
+      Arquero1Sheet2_62: -363707056
+      Arquero1Sheet2_63: 1154177948
+      Arquero1Sheet2_64: 574324397
+      Arquero1Sheet2_65: -489074422
+      Arquero1Sheet2_66: 584684089
+      Arquero1Sheet2_7: -1294284153
+      Arquero1Sheet2_8: 425538913
+      Arquero1Sheet2_9: 803746524
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
