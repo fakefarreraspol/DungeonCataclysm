@@ -7,6 +7,10 @@ public class Archer : Character
     [SerializeField] private GameObject arrow;
     public float projectileVelocity;
 
+
+    
+
+
     private Quaternion arrowRotation;
 
     protected override void Attack()

@@ -17,11 +17,11 @@ public class Enemy : MonoBehaviour
 
 
 
-
+    
 
 
     /////////////////////
-
+    private SpriteRenderer spriteRenderer;
 
     
 
@@ -31,13 +31,17 @@ public class Enemy : MonoBehaviour
         
         player = FindObjectOfType<Character>();
         targetPos = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        spriteRenderer =  GetComponent<SpriteRenderer>();
         
         Introduction();
     }
     private void FixedUpdate()
     {
         Move();
-
+        
+        
+        Animate();
+        
         // Destroy game object if enemy has no health
         if(healthPoints <= 0)
         {
@@ -59,6 +63,7 @@ public class Enemy : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, targetPos.position, moveSpeed * Time.deltaTime);
         }
+        else Attack();
         
     }
 
@@ -89,8 +94,19 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
+    private void Animate()
+    {
+        FlipSprite();
+    }
     
-
+    private void FlipSprite()
+    {
+        if(targetPos.position.x < transform.position.x)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else spriteRenderer.flipX = false;
+    }
 
 
 
