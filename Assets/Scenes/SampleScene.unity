@@ -246,7 +246,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: 
   moveSpeed: 2
-  maxHealthPoints: 10
+  maxHealthPoints: 20
+  damage: 5
 --- !u!61 &16847494
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13364,7 +13365,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: 
   moveSpeed: 2
-  maxHealthPoints: 10
+  maxHealthPoints: 20
+  damage: 5
 --- !u!95 &1800633304
 Animator:
   serializedVersion: 5
