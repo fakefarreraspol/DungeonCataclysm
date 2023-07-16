@@ -22,7 +22,7 @@ public class Enemy : MonoBehaviour
 
     /////////////////////
     private SpriteRenderer spriteRenderer;
-
+    private Animator enAnimator;
     
 
     private void Start()
@@ -75,12 +75,6 @@ public class Enemy : MonoBehaviour
     }
 
 
-
-
-
-
-
-    
     private void ReceiveDamage(float damage)
     {
         healthPoints -= damage;

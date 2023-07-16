@@ -11,7 +11,7 @@ public class Archer : Character
     
 
 
-    private Quaternion arrowRotation;
+    
 
     protected override void Attack()
     {
@@ -22,12 +22,10 @@ public class Archer : Character
     private void ShootArrow()
     {
         
+        Quaternion ArrowRotation = Quaternion.LookRotation(Vector3.forward, attackVector);
 
 
-
-
-
-        GameObject test = Instantiate(arrow, transform.position, Quaternion.identity);
+        GameObject test = Instantiate(arrow, transform.position, ArrowRotation);
         Rigidbody2D testRB = test.GetComponent<Rigidbody2D>();
         testRB.velocity = attackVector * projectileVelocity;
 
