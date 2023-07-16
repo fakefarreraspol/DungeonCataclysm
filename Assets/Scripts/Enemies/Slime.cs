@@ -13,7 +13,7 @@ public class Slime : Enemy
 
     protected override void Attack()
     {
-        //base.Attack();
+        base.Attack();
         
     }
 }

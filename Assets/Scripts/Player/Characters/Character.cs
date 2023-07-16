@@ -67,7 +67,7 @@ public class Character : MonoBehaviour
 
     }
 
-    protected virtual void ReceiveDamage(int damage)
+    public virtual void ReceiveDamage(int damage)
     {
         chHP -= damage;
         if (chHP <= 0)

@@ -7,9 +7,9 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] private string enemyName;
     [SerializeField] private float moveSpeed;
-    private float healthPoints;
-    [SerializeField] private float maxHealthPoints;
-
+    private int healthPoints;
+    [SerializeField] private int maxHealthPoints;
+    [SerializeField] protected int damage = 5;
 
 
     private Character player;
@@ -71,11 +71,12 @@ public class Enemy : MonoBehaviour
 
     protected virtual void Attack()
     {
-        
+        Debug.Log("Attacked succesfull");
+        player.ReceiveDamage(damage);
     }
 
 
-    private void ReceiveDamage(float damage)
+    private void ReceiveDamage(int damage)
     {
         healthPoints -= damage;
     }
