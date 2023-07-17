@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyName: 
-  moveSpeed: 2
+  moveSpeed: 1
   maxHealthPoints: 20
   damage: 5
   enemyRateOfFire: 10
