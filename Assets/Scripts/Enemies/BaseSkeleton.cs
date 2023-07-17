@@ -2,9 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bat : Enemy
+public class BaseSkeleton : Enemy
 {
     // Start is called before the first frame update
+     protected override void Introduction()
+    {
+        //base.Introduction();
+        Debug.Log("Rizz"); 
+    }
+    
     void Start()
     {
         base.Attack();
