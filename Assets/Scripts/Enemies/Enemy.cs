@@ -12,34 +12,38 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected int damage = 5;
     public float enemyRateOfFire;
     protected bool canAttack = true;
+    protected bool isAttacking = false;
     private Character player;
     private Transform targetPos;
-
-
-
     
+
+    [SerializeField] protected float distanceFromPlayer;
+
+    protected bool isMoving = false;
+
 
 
     /////////////////////
     private SpriteRenderer spriteRenderer;
     private Animator enAnimator;
-    
+
 
     private void Start()
     {
         healthPoints = maxHealthPoints;
-        
+
         player = FindObjectOfType<Character>();
         targetPos = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-        spriteRenderer =  GetComponent<SpriteRenderer>();
-        
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        enAnimator = GetComponent<Animator>();
+
         Introduction();
     }
     private void FixedUpdate()
     {
-        Decisions();    
-         Animate();
-        
+        Decisions();
+        Animate();
+
     }
     protected virtual void Introduction()
     {
@@ -48,27 +52,34 @@ public class Enemy : MonoBehaviour
 
     protected virtual void Decisions()
     {
-        if(Vector3.Distance(transform.position, targetPos.position) > 0.9)
+        if (Vector3.Distance(transform.position, targetPos.position) > distanceFromPlayer)
         {
+            isMoving = true;
             Move(targetPos);
         }
-        else Attack();
+        else 
+        {
+            Attack();
+            isMoving = false;
+        }
 
     }
     protected virtual void Move(Transform pos)
-    {     
+    {
         transform.position = Vector2.MoveTowards(transform.position, pos.position, moveSpeed * Time.deltaTime);
-        
+
     }
 
 
 
     protected virtual void Attack()
     {
-        
-        Debug.Log("Attacked succesfull");
-        if(canAttack)
+
+
+        if (canAttack)
         {
+            enAnimator.SetTrigger("Attack");
+            Debug.Log("Attacked succesfull");
             DoDamage(damage);
             canAttack = false;
             Invoke("DelayBetweenAttacks", enemyRateOfFire);
@@ -90,12 +101,12 @@ public class Enemy : MonoBehaviour
         healthPoints -= damage;
 
         // Destroy game object if enemy has no health
-        if(healthPoints <= 0)
+        if (healthPoints <= 0)
         {
             Death();
         }
     }
-    
+
     private void Death()
     {
 
@@ -104,30 +115,45 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void Animate()
+    ////////////////////////////////////// ANIMATIONS ///////////////////////////////////////
+    protected virtual void Animate()
     {
+        if(isMoving)
+            enAnimator.SetBool("isWalking", true);
+        else
+            enAnimator.SetBool("isWalking", false);
+
         FlipSprite();
     }
-    
+
     private void FlipSprite()
     {
-        if(targetPos.position.x < transform.position.x)
+        if (targetPos.position.x < transform.position.x)
         {
             spriteRenderer.flipX = true;
         }
         else spriteRenderer.flipX = false;
     }
 
+    protected bool AnimatorIsPlaying(string stateName)
+    {
+        return AnimatorIsPlaying() && enAnimator.GetCurrentAnimatorStateInfo(0).IsName(stateName);
+    }
+    private bool AnimatorIsPlaying()
+    {
+        return enAnimator.GetCurrentAnimatorStateInfo(0).length >
+               enAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime;
+    }
 
 
     private void OnTriggerEnter2D(Collider2D coll)
     {
-        if(coll.gameObject.tag == "BaseBullet")
+        if (coll.gameObject.tag == "BaseBullet")
         {
             Destroy(coll.gameObject);
-            
+
             ReceiveDamage(player.chDamage);
-            
+
 
         }
     }

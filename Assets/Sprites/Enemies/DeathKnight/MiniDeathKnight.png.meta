@@ -139,10 +139,10 @@ TextureImporter:
       name: MiniDeathKnight_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 193
-        width: 14
-        height: 18
+        x: 0
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,10 +160,10 @@ TextureImporter:
       name: MiniDeathKnight_1
       rect:
         serializedVersion: 2
-        x: 41
-        y: 193
-        width: 14
-        height: 18
+        x: 32
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,10 +181,10 @@ TextureImporter:
       name: MiniDeathKnight_2
       rect:
         serializedVersion: 2
-        x: 73
-        y: 193
-        width: 14
-        height: 18
+        x: 64
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,10 +202,10 @@ TextureImporter:
       name: MiniDeathKnight_3
       rect:
         serializedVersion: 2
-        x: 105
-        y: 193
-        width: 14
-        height: 18
+        x: 96
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,10 +223,10 @@ TextureImporter:
       name: MiniDeathKnight_4
       rect:
         serializedVersion: 2
-        x: 11
-        y: 161
-        width: 11
-        height: 20
+        x: 0
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,10 +244,10 @@ TextureImporter:
       name: MiniDeathKnight_5
       rect:
         serializedVersion: 2
-        x: 43
-        y: 161
-        width: 11
-        height: 19
+        x: 32
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,10 +265,10 @@ TextureImporter:
       name: MiniDeathKnight_6
       rect:
         serializedVersion: 2
-        x: 74
-        y: 161
-        width: 13
-        height: 19
+        x: 64
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,10 +286,10 @@ TextureImporter:
       name: MiniDeathKnight_7
       rect:
         serializedVersion: 2
-        x: 105
-        y: 161
-        width: 15
-        height: 20
+        x: 96
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,10 +307,10 @@ TextureImporter:
       name: MiniDeathKnight_8
       rect:
         serializedVersion: 2
-        x: 137
-        y: 161
-        width: 15
-        height: 19
+        x: 128
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,10 +328,10 @@ TextureImporter:
       name: MiniDeathKnight_9
       rect:
         serializedVersion: 2
-        x: 170
-        y: 161
-        width: 13
-        height: 19
+        x: 160
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -349,10 +349,10 @@ TextureImporter:
       name: MiniDeathKnight_10
       rect:
         serializedVersion: 2
-        x: 9
-        y: 129
-        width: 15
-        height: 19
+        x: 0
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -370,10 +370,10 @@ TextureImporter:
       name: MiniDeathKnight_11
       rect:
         serializedVersion: 2
-        x: 41
-        y: 129
-        width: 15
-        height: 20
+        x: 32
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -391,10 +391,10 @@ TextureImporter:
       name: MiniDeathKnight_12
       rect:
         serializedVersion: 2
-        x: 73
-        y: 129
-        width: 14
-        height: 18
+        x: 64
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -412,10 +412,10 @@ TextureImporter:
       name: MiniDeathKnight_13
       rect:
         serializedVersion: 2
-        x: 6
-        y: 97
-        width: 16
-        height: 19
+        x: 0
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -433,10 +433,10 @@ TextureImporter:
       name: MiniDeathKnight_14
       rect:
         serializedVersion: 2
-        x: 33
-        y: 97
-        width: 19
-        height: 16
+        x: 32
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -454,10 +454,10 @@ TextureImporter:
       name: MiniDeathKnight_15
       rect:
         serializedVersion: 2
-        x: 75
-        y: 97
-        width: 19
-        height: 15
+        x: 64
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -475,10 +475,10 @@ TextureImporter:
       name: MiniDeathKnight_16
       rect:
         serializedVersion: 2
-        x: 108
-        y: 97
-        width: 19
-        height: 14
+        x: 96
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -496,10 +496,10 @@ TextureImporter:
       name: MiniDeathKnight_17
       rect:
         serializedVersion: 2
-        x: 138
-        y: 97
-        width: 19
-        height: 14
+        x: 128
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -517,10 +517,10 @@ TextureImporter:
       name: MiniDeathKnight_18
       rect:
         serializedVersion: 2
-        x: 9
-        y: 65
-        width: 13
-        height: 18
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -538,10 +538,10 @@ TextureImporter:
       name: MiniDeathKnight_19
       rect:
         serializedVersion: 2
-        x: 41
-        y: 65
-        width: 13
-        height: 18
+        x: 32
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -559,10 +559,10 @@ TextureImporter:
       name: MiniDeathKnight_20
       rect:
         serializedVersion: 2
-        x: 73
-        y: 65
-        width: 13
-        height: 18
+        x: 64
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -580,10 +580,10 @@ TextureImporter:
       name: MiniDeathKnight_21
       rect:
         serializedVersion: 2
-        x: 105
-        y: 65
-        width: 13
-        height: 18
+        x: 96
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -601,10 +601,10 @@ TextureImporter:
       name: MiniDeathKnight_22
       rect:
         serializedVersion: 2
-        x: 134
-        y: 65
-        width: 20
-        height: 18
+        x: 128
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -622,10 +622,10 @@ TextureImporter:
       name: MiniDeathKnight_23
       rect:
         serializedVersion: 2
-        x: 166
-        y: 65
-        width: 20
-        height: 18
+        x: 160
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -643,10 +643,10 @@ TextureImporter:
       name: MiniDeathKnight_24
       rect:
         serializedVersion: 2
-        x: 198
-        y: 65
-        width: 20
-        height: 18
+        x: 192
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -664,10 +664,10 @@ TextureImporter:
       name: MiniDeathKnight_25
       rect:
         serializedVersion: 2
-        x: 233
-        y: 65
-        width: 15
-        height: 18
+        x: 224
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -685,10 +685,10 @@ TextureImporter:
       name: MiniDeathKnight_26
       rect:
         serializedVersion: 2
-        x: 5
-        y: 33
-        width: 16
-        height: 18
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -706,10 +706,10 @@ TextureImporter:
       name: MiniDeathKnight_27
       rect:
         serializedVersion: 2
-        x: 40
-        y: 33
-        width: 14
-        height: 18
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -727,10 +727,10 @@ TextureImporter:
       name: MiniDeathKnight_28
       rect:
         serializedVersion: 2
-        x: 10
-        y: 1
-        width: 14
-        height: 18
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -748,10 +748,10 @@ TextureImporter:
       name: MiniDeathKnight_29
       rect:
         serializedVersion: 2
-        x: 42
-        y: 1
-        width: 14
-        height: 14
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -769,10 +769,10 @@ TextureImporter:
       name: MiniDeathKnight_30
       rect:
         serializedVersion: 2
-        x: 74
-        y: 1
-        width: 19
-        height: 12
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -790,10 +790,10 @@ TextureImporter:
       name: MiniDeathKnight_31
       rect:
         serializedVersion: 2
-        x: 106
-        y: 1
-        width: 19
-        height: 9
+        x: 96
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

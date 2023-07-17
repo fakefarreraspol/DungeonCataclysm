@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Slime : Enemy
+public class DeathKnight : Enemy
 {
     
     protected override void Introduction()
@@ -15,5 +15,13 @@ public class Slime : Enemy
     {
         base.Attack();
         
+    }
+
+    protected override void Animate()
+    {
+        base.Animate();
+
+        
+
     }
 }
