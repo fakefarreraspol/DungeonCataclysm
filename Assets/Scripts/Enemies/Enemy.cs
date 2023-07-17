@@ -10,8 +10,8 @@ public class Enemy : MonoBehaviour
     private int healthPoints;
     [SerializeField] private int maxHealthPoints;
     [SerializeField] protected int damage = 5;
-
-
+    public float enemyRateOfFire;
+    protected bool canAttack = true;
     private Character player;
     private Transform targetPos;
 
@@ -37,33 +37,27 @@ public class Enemy : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        Move();
+        Decisions();    
+         Animate();
         
-        
-        Animate();
-        
-        // Destroy game object if enemy has no health
-        if(healthPoints <= 0)
-        {
-            Death();
-        }
     }
     protected virtual void Introduction()
     {
         Debug.Log(" " + enemyName + ", HP: " + healthPoints + ", Speed: " + moveSpeed);
     }
 
-    protected virtual void Move()
+    protected virtual void Decisions()
     {
-        
-        //Debug.Log(Vector3.Distance( transform.position, targetPos.position));
-        
-        
         if(Vector3.Distance(transform.position, targetPos.position) > 0.9)
         {
-            transform.position = Vector2.MoveTowards(transform.position, targetPos.position, moveSpeed * Time.deltaTime);
+            Move(targetPos);
         }
         else Attack();
+
+    }
+    protected virtual void Move(Transform pos)
+    {     
+        transform.position = Vector2.MoveTowards(transform.position, pos.position, moveSpeed * Time.deltaTime);
         
     }
 
@@ -71,14 +65,35 @@ public class Enemy : MonoBehaviour
 
     protected virtual void Attack()
     {
+        
         Debug.Log("Attacked succesfull");
-        player.ReceiveDamage(damage);
+        if(canAttack)
+        {
+            DoDamage(damage);
+            canAttack = false;
+            Invoke("DelayBetweenAttacks", enemyRateOfFire);
+        }
     }
 
+    protected void DelayBetweenAttacks()
+    {
+        canAttack = true;
+    }
+
+    protected void DoDamage(int damage)
+    {
+        player.ReceiveDamage(damage);
+    }
 
     private void ReceiveDamage(int damage)
     {
         healthPoints -= damage;
+
+        // Destroy game object if enemy has no health
+        if(healthPoints <= 0)
+        {
+            Death();
+        }
     }
     
     private void Death()
