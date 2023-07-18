@@ -13171,7 +13171,6 @@ GameObject:
   - component: {fileID: 995959967}
   - component: {fileID: 995959966}
   - component: {fileID: 995959965}
-  - component: {fileID: 995959968}
   m_Layer: 0
   m_Name: MiniSkeleton_0
   m_TagString: Untagged
@@ -13280,7 +13279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyName: 
-  moveSpeed: 5
+  moveSpeed: 0.5
   maxHealthPoints: 15
   damage: 3
   enemyRateOfFire: 3
@@ -13357,24 +13356,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.13833226, y: 0.17338544}
   m_EdgeRadius: 0
---- !u!114 &995959968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 995959961}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4133e4d0fdea596499fa8ec87a8eba4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyName: 
-  moveSpeed: 0.5
-  maxHealthPoints: 15
-  damage: 5
-  enemyRateOfFire: 3
-  distanceFromPlayer: 0.5
 --- !u!1 &1302225541
 GameObject:
   m_ObjectHideFlags: 0
