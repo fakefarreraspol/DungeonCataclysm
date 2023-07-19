@@ -14,8 +14,8 @@ public class Enemy : MonoBehaviour
     protected bool canAttack = true;
     protected bool isAttacking = false;
     private Character player;
-    private Transform targetPos;
-    
+    protected Transform targetPos;
+
 
     [SerializeField] protected float distanceFromPlayer;
 
@@ -57,7 +57,7 @@ public class Enemy : MonoBehaviour
             isMoving = true;
             Move(targetPos);
         }
-        else 
+        else
         {
             Attack();
             isMoving = false;
@@ -118,7 +118,7 @@ public class Enemy : MonoBehaviour
     ////////////////////////////////////// ANIMATIONS ///////////////////////////////////////
     protected virtual void Animate()
     {
-        if(isMoving)
+        if (isMoving)
             enAnimator.SetBool("isWalking", true);
         else
             enAnimator.SetBool("isWalking", false);
@@ -156,5 +156,13 @@ public class Enemy : MonoBehaviour
 
 
         }
+    }
+
+
+
+
+    protected Vector2 ComputeVector(Vector2 a, Vector2 b)
+    {
+        return new Vector2(b.x - a.x, b.y - a.y);
     }
 }

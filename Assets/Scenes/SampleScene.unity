@@ -143,7 +143,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &16847490
 Animator:
   serializedVersion: 5
@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyName: 
-  moveSpeed: 0
+  moveSpeed: 1
   maxHealthPoints: 20
   damage: 5
   enemyRateOfFire: 10
@@ -282,7 +282,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.003951259, y: -0.038525272}
+  m_Offset: {x: -0.003951259, y: -0.1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -293,7 +293,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.0787081, y: 0.10294946}
+  m_Size: {x: 0.08, y: 0.10294946}
   m_EdgeRadius: 0
 --- !u!50 &16847495
 Rigidbody2D:
@@ -13177,7 +13177,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &995959962
 Animator:
   serializedVersion: 5
@@ -13279,7 +13279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyName: 
-  moveSpeed: 0
+  moveSpeed: 1
   maxHealthPoints: 15
   damage: 3
   enemyRateOfFire: 3
@@ -13562,7 +13562,7 @@ MonoBehaviour:
   moveSpeed: 1
   maxHealthPoints: 20
   damage: 10
-  enemyRateOfFire: 5
+  enemyRateOfFire: 2
   distanceFromPlayer: 6
   fire: {fileID: 1800665907}
   projectileVelocity: 2
@@ -14189,7 +14189,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &2134989004
 Animator:
   serializedVersion: 5
@@ -14224,11 +14224,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyName: 
-  moveSpeed: 0
+  moveSpeed: 1
   maxHealthPoints: 5
   damage: 2
   enemyRateOfFire: 1
-  distanceFromPlayer: 0
+  distanceFromPlayer: 0.5
 --- !u!50 &2134989006
 Rigidbody2D:
   serializedVersion: 4
