@@ -19,16 +19,16 @@ public class ScoreUI : MonoBehaviour
 
     private void OnEnable()
     {
-        OnScoreChanged += sex;
+        OnScoreChanged += OnEnemyDefeated;
     }
     private void OnDisable()
     {
-        OnScoreChanged -= sex;
+        OnScoreChanged -= OnEnemyDefeated;
     }
 
-    private void sex(int sex)
+    private void OnEnemyDefeated(int enemies)
     {
-        scoreText.text = sex.ToString();
+        scoreText.text = enemies.ToString();
     }
     
 }

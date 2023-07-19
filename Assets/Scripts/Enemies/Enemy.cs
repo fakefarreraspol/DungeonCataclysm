@@ -110,7 +110,7 @@ public class Enemy : MonoBehaviour
     private void Death()
     {
 
-        ScoreManager.OnScoreChanged(5);
+        ScoreManager.OnScoreChanged(1);
 
         Destroy(gameObject);
     }
