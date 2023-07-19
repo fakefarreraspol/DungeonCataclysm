@@ -2,106 +2,131 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Pathfinding;
+
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private string enemyName;
-    [SerializeField] private float moveSpeed;
-    private int healthPoints;
-    [SerializeField] private int maxHealthPoints;
-    [SerializeField] protected int damage = 5;
-    public float enemyRateOfFire;
-    protected bool canAttack = true;
-    protected bool isAttacking = false;
-    private Character player;
-    protected Transform targetPos;
+    [Header("Enemy Stats")]
+    [SerializeField] protected string enName;
+    [SerializeField] protected int maxHealthPoints;
+    [SerializeField] private int enHealthPoints;
+    [SerializeField] protected float enSpeed;
+    [SerializeField] protected float nextWaypointDistance;
+    [SerializeField] protected float chaseDistance;
+    [SerializeField] protected float attackDistance;
+    [SerializeField] private float deathTime;
 
 
-    [SerializeField] protected float distanceFromPlayer;
+    [Header("Pathfinding")]
+    protected Path path;
+    protected int currentWaypoint = 0;
+    protected bool reachedEndOfPath = false;
+    protected Seeker seeker;
 
-    protected bool isMoving = false;
+    [Header("Utils")]
+    [SerializeField] protected Transform enemyTarget;
+    // References to other Scripts/ Utils
+    protected Character playerCharacter;
+    protected Rigidbody2D enRb;
+    private bool canPathBeChanged = true;
 
-
-
-    /////////////////////
-    private SpriteRenderer spriteRenderer;
-    private Animator enAnimator;
-
-
-    private void Start()
+    protected virtual void Start()
     {
-        healthPoints = maxHealthPoints;
+        enHealthPoints = maxHealthPoints;
+        playerCharacter = FindObjectOfType<Character>();
+        enemyTarget = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
 
-        player = FindObjectOfType<Character>();
-        targetPos = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        enAnimator = GetComponent<Animator>();
+        seeker = GetComponent<Seeker>();
+        enRb = GetComponent<Rigidbody2D>();
 
-        Introduction();
+        //InvokeRepeating("SetPath", 0, 1);
+
     }
+
     private void FixedUpdate()
     {
-        Decisions();
-        Animate();
-
+        Decide();
     }
-    protected virtual void Introduction()
+    protected virtual void Decide()
     {
-        Debug.Log(" " + enemyName + ", HP: " + healthPoints + ", Speed: " + moveSpeed);
-    }
-
-    protected virtual void Decisions()
-    {
-        if (Vector3.Distance(transform.position, targetPos.position) > distanceFromPlayer)
+        if (Vector2.Distance(transform.position, enemyTarget.position) < chaseDistance )
         {
-            isMoving = true;
-            Move(targetPos);
-        }
-        else
-        {
-            Attack();
-            isMoving = false;
+            if (Vector2.Distance(transform.position, enemyTarget.position) > attackDistance)
+            {
+                SetPath(enemyTarget.position);
+                Move();
+            }
+            else Attack();
+            
         }
 
     }
-    protected virtual void Move(Transform pos)
+
+    
+    private void Move()
     {
-        transform.position = Vector2.MoveTowards(transform.position, pos.position, moveSpeed * Time.deltaTime);
+
+        
+        if (path == null) return;
+        else if (currentWaypoint >= path.vectorPath.Count)
+        {
+            reachedEndOfPath = true;
+            return;
+        }
+        else reachedEndOfPath = false;
+
+        Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - enRb.position).normalized;
+
+        
+        enRb.AddForce(direction * enSpeed * Time.deltaTime);
+
+        float distance = Vector2.Distance(transform.position, path.vectorPath[currentWaypoint]);
+
+        if (distance < nextWaypointDistance)
+        {
+            currentWaypoint++;
+        }
+    }
+
+    protected void SetPath(Vector2 destPos)
+    {
+        if (canPathBeChanged)
+        {
+            seeker.StartPath(transform.position, destPos, OnPathComplete);
+            canPathBeChanged = false;
+            Invoke("changePathStatus", 0.5f);
+        }
+    }
+    private void changePathStatus() { canPathBeChanged = true; }
+
+    private void OnPathComplete(Path p)
+    {
+        if (!p.error)
+        {
+            path = p;
+            currentWaypoint = 0;
+        }
 
     }
+
 
 
 
     protected virtual void Attack()
     {
-
-
-        if (canAttack)
-        {
-            enAnimator.SetTrigger("Attack");
-            Debug.Log("Attacked succesfull");
-            DoDamage(damage);
-            canAttack = false;
-            Invoke("DelayBetweenAttacks", enemyRateOfFire);
-        }
+        
     }
 
-    protected void DelayBetweenAttacks()
-    {
-        canAttack = true;
-    }
 
-    protected void DoDamage(int damage)
-    {
-        player.ReceiveDamage(damage);
-    }
+
+
+
 
     private void ReceiveDamage(int damage)
     {
-        healthPoints -= damage;
-
-        // Destroy game object if enemy has no health
-        if (healthPoints <= 0)
+        enHealthPoints -= damage;
+        if (enHealthPoints <= 0)
         {
             Death();
         }
@@ -110,40 +135,10 @@ public class Enemy : MonoBehaviour
     private void Death()
     {
 
-        ScoreManager.OnScoreChanged(1);
-
-        Destroy(gameObject);
+        Destroy(gameObject, deathTime);
     }
 
-    ////////////////////////////////////// ANIMATIONS ///////////////////////////////////////
-    protected virtual void Animate()
-    {
-        if (isMoving)
-            enAnimator.SetBool("isWalking", true);
-        else
-            enAnimator.SetBool("isWalking", false);
 
-        FlipSprite();
-    }
-
-    private void FlipSprite()
-    {
-        if (targetPos.position.x < transform.position.x)
-        {
-            spriteRenderer.flipX = true;
-        }
-        else spriteRenderer.flipX = false;
-    }
-
-    protected bool AnimatorIsPlaying(string stateName)
-    {
-        return AnimatorIsPlaying() && enAnimator.GetCurrentAnimatorStateInfo(0).IsName(stateName);
-    }
-    private bool AnimatorIsPlaying()
-    {
-        return enAnimator.GetCurrentAnimatorStateInfo(0).length >
-               enAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime;
-    }
 
 
     private void OnTriggerEnter2D(Collider2D coll)
@@ -152,15 +147,11 @@ public class Enemy : MonoBehaviour
         {
             Destroy(coll.gameObject);
 
-            ReceiveDamage(player.chDamage);
+            ReceiveDamage(playerCharacter.chDamage);
 
 
         }
     }
-
-
-
-
     protected Vector2 ComputeVector(Vector2 a, Vector2 b)
     {
         return new Vector2(b.x - a.x, b.y - a.y);

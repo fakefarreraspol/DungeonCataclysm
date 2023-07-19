@@ -134,16 +134,17 @@ GameObject:
   - component: {fileID: 16847492}
   - component: {fileID: 16847491}
   - component: {fileID: 16847494}
+  - component: {fileID: 16847495}
   - component: {fileID: 16847490}
   - component: {fileID: 16847493}
-  - component: {fileID: 16847495}
+  - component: {fileID: 16847496}
   m_Layer: 7
   m_Name: MiniDeathKnight_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &16847490
 Animator:
   serializedVersion: 5
@@ -244,12 +245,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4133e4d0fdea596499fa8ec87a8eba4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyName: 
-  moveSpeed: 1
-  maxHealthPoints: 20
-  damage: 5
-  enemyRateOfFire: 10
-  distanceFromPlayer: 0.5
+  enName: DeathKnight
+  maxHealthPoints: 100
+  enHealthPoints: 0
+  enSpeed: 500
+  nextWaypointDistance: 0.2
+  chaseDistance: 3
+  attackDistance: 0.3
+  deathTime: 0
+  enemyTarget: {fileID: 0}
 --- !u!61 &16847494
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -322,6 +326,34 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &16847496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16847489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  drawGizmos: 1
+  detailedGizmos: 0
+  startEndModifier:
+    addPoints: 0
+    exactStartPoint: 3
+    exactEndPoint: 3
+    useRaycasting: 0
+    mask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    useGraphRaycasting: 0
+  traversableTags: -1
+  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  graphMask:
+    value: -1
 --- !u!1 &84404618
 GameObject:
   m_ObjectHideFlags: 0
@@ -16296,12 +16328,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3526526a725ac9646832a4d20b9991a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyName: 
-  moveSpeed: 1
+  enName: 
   maxHealthPoints: 15
-  damage: 3
-  enemyRateOfFire: 3
-  distanceFromPlayer: 0.5
+  enHealthPoints: 0
+  enSpeed: 0
+  nextWaypointDistance: 0
+  chaseDistance: 0
+  attackDistance: 0
+  deathTime: 0
+  enemyTarget: {fileID: 0}
 --- !u!50 &995959966
 Rigidbody2D:
   serializedVersion: 4
@@ -16542,7 +16577,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1406805622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16555,14 +16590,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db372b6f5094c084e9f8785c75c2f379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyName: 
-  moveSpeed: 1
+  enName: 
   maxHealthPoints: 20
-  damage: 10
-  enemyRateOfFire: 2
-  distanceFromPlayer: 6
-  fire: {fileID: 1800665907}
-  projectileVelocity: 2
+  enHealthPoints: 0
+  enSpeed: 0
+  nextWaypointDistance: 0
+  chaseDistance: 0
+  attackDistance: 0
+  deathTime: 0
+  enemyTarget: {fileID: 0}
 --- !u!95 &1406805623
 Animator:
   serializedVersion: 5
@@ -16742,7 +16778,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1471555679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16914,7 +16950,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1567571371
 Animator:
   serializedVersion: 5
@@ -16948,14 +16984,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96905f950105c0249916eae1b3c06923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyName: 
-  moveSpeed: 1
+  enName: 
   maxHealthPoints: 20
-  damage: 10
-  enemyRateOfFire: 1
-  distanceFromPlayer: 6
-  fire: {fileID: 1800665907}
-  projectileVelocity: 3
+  enHealthPoints: 0
+  enSpeed: 0
+  nextWaypointDistance: 0
+  chaseDistance: 0
+  attackDistance: 0
+  deathTime: 0
+  enemyTarget: {fileID: 0}
 --- !u!61 &1567571373
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17113,7 +17150,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1800665908
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17613,12 +17650,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18e24cd88d170eb45b3907c600abf955, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyName: 
-  moveSpeed: 1
+  enName: 
   maxHealthPoints: 5
-  damage: 2
-  enemyRateOfFire: 1
-  distanceFromPlayer: 0.5
+  enHealthPoints: 0
+  enSpeed: 0
+  nextWaypointDistance: 0
+  chaseDistance: 0
+  attackDistance: 0
+  deathTime: 0
+  enemyTarget: {fileID: 0}
 --- !u!50 &2134989006
 Rigidbody2D:
   serializedVersion: 4
