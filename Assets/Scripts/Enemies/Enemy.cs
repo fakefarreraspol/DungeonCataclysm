@@ -113,7 +113,7 @@ public class Enemy : MonoBehaviour
 
     private void Animate()
     {
-        Debug.Log(enRb.velocity.x);
+        //Debug.Log(enRb.velocity.x);
         if (enRb.velocity.x > 0.1f || enRb.velocity.x < -0.1f) enAnimator.SetBool("isWalking", true);
         else enAnimator.SetBool("isWalking", false);
         

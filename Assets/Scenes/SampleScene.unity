@@ -144,7 +144,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &16847490
 Animator:
   serializedVersion: 5
@@ -251,7 +251,9 @@ MonoBehaviour:
   enSpeed: 500
   nextWaypointDistance: 0.2
   chaseDistance: 3
-  attackDistance: 0.3
+  attackDistance: 0.5
+  rateOfFire: 1
+  enDamage: 10
   deathTime: 0
   enemyTarget: {fileID: 0}
 --- !u!61 &16847494
@@ -16335,6 +16337,8 @@ MonoBehaviour:
   nextWaypointDistance: 0
   chaseDistance: 0
   attackDistance: 0
+  rateOfFire: 0
+  enDamage: 0
   deathTime: 0
   enemyTarget: {fileID: 0}
 --- !u!50 &995959966
@@ -16597,6 +16601,8 @@ MonoBehaviour:
   nextWaypointDistance: 0
   chaseDistance: 0
   attackDistance: 0
+  rateOfFire: 0
+  enDamage: 0
   deathTime: 0
   enemyTarget: {fileID: 0}
 --- !u!95 &1406805623
@@ -16950,7 +16956,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &1567571371
 Animator:
   serializedVersion: 5
@@ -16984,15 +16990,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96905f950105c0249916eae1b3c06923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enName: 
+  enName: Lich
   maxHealthPoints: 20
-  enHealthPoints: 0
-  enSpeed: 0
+  enHealthPoints: 10
+  enSpeed: 1
   nextWaypointDistance: 0
-  chaseDistance: 0
+  chaseDistance: 10
   attackDistance: 0
+  rateOfFire: 1
+  enDamage: 10
   deathTime: 0
   enemyTarget: {fileID: 0}
+  projectileVelocity: 1
+  bullet: {fileID: 1800665907}
+  projectileLifetime: 10
 --- !u!61 &1567571373
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17150,7 +17161,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1800665908
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17657,6 +17668,8 @@ MonoBehaviour:
   nextWaypointDistance: 0
   chaseDistance: 0
   attackDistance: 0
+  rateOfFire: 0
+  enDamage: 0
   deathTime: 0
   enemyTarget: {fileID: 0}
 --- !u!50 &2134989006

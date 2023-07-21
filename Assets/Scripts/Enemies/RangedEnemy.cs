@@ -17,14 +17,12 @@ public class RangedEnemy : Enemy
     }
     protected override void Decide()
     {
-        Attack();
+       
 
     }
 
     protected override void Attack()
     {
-        if(canAttack) SpawnBullet(enemyTarget.position);
-
         base.Attack();
     }
 
