@@ -19,9 +19,7 @@ public class MeleeEnemy : Enemy
 
     protected override void Attack()
     {
-        Debug.Log("Attacked");
-        if(canAttack) DoDamage(enDamage);
-        
+        Debug.Log("Attacked");        
         base.Attack();
     }
 
