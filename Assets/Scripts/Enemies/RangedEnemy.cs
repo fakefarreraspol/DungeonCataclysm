@@ -39,6 +39,12 @@ public class RangedEnemy : Enemy
             Rigidbody2D newBulletRB = newBullet.GetComponent<Rigidbody2D>();
             newBulletRB.velocity = attackingVector * projectileVelocity;
 
+            BoxCollider2D box = newBullet.AddComponent<BoxCollider2D>();
+            box.isTrigger = true;
+            newBullet.AddComponent<Projectile>().AddProjectileDamage(enDamage);
+
+
+
             Destroy(newBullet, projectileLifetime);
 
 
