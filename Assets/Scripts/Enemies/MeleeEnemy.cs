@@ -21,6 +21,7 @@ public class MeleeEnemy : Enemy
     {
         Debug.Log("Attacked");
         if(canAttack) DoDamage(enDamage);
+        
         base.Attack();
     }
 
