@@ -15,6 +15,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected float nextWaypointDistance;
     [SerializeField] protected float chaseDistance;
     [SerializeField] protected float attackDistance;
+    [SerializeField] protected float rateOfFire;
+    [SerializeField] protected int enDamage;
+
     [SerializeField] private float deathTime;
 
 
@@ -29,13 +32,19 @@ public class Enemy : MonoBehaviour
     // References to other Scripts/ Utils
     protected Character playerCharacter;
     protected Rigidbody2D enRb;
+    protected Animator enAnimator;
+    protected SpriteRenderer enSprRenderer;
     private bool canPathBeChanged = true;
+    protected bool canAttack = true;
 
     protected virtual void Start()
     {
         enHealthPoints = maxHealthPoints;
         playerCharacter = FindObjectOfType<Character>();
         enemyTarget = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+
+        enSprRenderer = GetComponent<SpriteRenderer>();
+        enAnimator = GetComponent<Animator>();
 
         seeker = GetComponent<Seeker>();
         enRb = GetComponent<Rigidbody2D>();
@@ -47,27 +56,19 @@ public class Enemy : MonoBehaviour
     private void FixedUpdate()
     {
         Decide();
+        Animate();
     }
     protected virtual void Decide()
     {
-        if (Vector2.Distance(transform.position, enemyTarget.position) < chaseDistance )
-        {
-            if (Vector2.Distance(transform.position, enemyTarget.position) > attackDistance)
-            {
-                SetPath(enemyTarget.position);
-                Move();
-            }
-            else Attack();
-            
-        }
+
 
     }
 
-    
-    private void Move()
+
+    protected void Move()
     {
 
-        
+
         if (path == null) return;
         else if (currentWaypoint >= path.vectorPath.Count)
         {
@@ -78,7 +79,7 @@ public class Enemy : MonoBehaviour
 
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - enRb.position).normalized;
 
-        
+
         enRb.AddForce(direction * enSpeed * Time.deltaTime);
 
         float distance = Vector2.Distance(transform.position, path.vectorPath[currentWaypoint]);
@@ -110,15 +111,33 @@ public class Enemy : MonoBehaviour
 
     }
 
-
-
+    private void Animate()
+    {
+        Debug.Log(enRb.velocity.x);
+        if (enRb.velocity.x > 0.1f || enRb.velocity.x < -0.1f) enAnimator.SetBool("isWalking", true);
+        else enAnimator.SetBool("isWalking", false);
+        
+        
+        FlipSprite();        
+    }
+    protected virtual void FlipSprite()
+    {
+        if (enRb.velocity.x > 0)
+            enSprRenderer.flipX = false;
+        else if (enRb.velocity.x < 0) enSprRenderer.flipX = true;
+    }
 
     protected virtual void Attack()
     {
-        
+        if (canAttack)
+        {
+            enAnimator.SetTrigger("Attack");
+            canAttack = false;
+            Invoke("ResetAttack", rateOfFire);
+        }
     }
 
-
+    private void ResetAttack() { canAttack = true; }
 
 
 
@@ -138,9 +157,6 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject, deathTime);
     }
 
-
-
-
     private void OnTriggerEnter2D(Collider2D coll)
     {
         if (coll.gameObject.tag == "BaseBullet")
@@ -152,6 +168,7 @@ public class Enemy : MonoBehaviour
 
         }
     }
+
     protected Vector2 ComputeVector(Vector2 a, Vector2 b)
     {
         return new Vector2(b.x - a.x, b.y - a.y);
