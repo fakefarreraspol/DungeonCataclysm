@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseSkeleton : Enemy
+public class BaseSkeleton : MeleeEnemy
 {
     // Start is called before the first frame update
   

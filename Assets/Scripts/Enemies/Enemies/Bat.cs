@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bat : Enemy
+public class Bat : MeleeEnemy
 {
     // Start is called before the first frame update
 //       protected override void Attack ()
