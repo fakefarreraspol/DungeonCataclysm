@@ -9,6 +9,8 @@ public class RangedEnemy : Enemy
     [SerializeField] protected GameObject bullet;
     [SerializeField] protected float projectileLifetime;
 
+    public Transform firingPoint;
+
 
     protected override void Start()
     {
@@ -28,14 +30,14 @@ public class RangedEnemy : Enemy
 
     protected void SpawnBullet(Vector2 destPos)
     {
-        Vector2 attackingVector = ComputeVector(transform.position, destPos).normalized;
+        Vector2 attackingVector = ComputeVector(firingPoint.position, destPos).normalized;
 
         if (canAttack)
         {
             Quaternion FireballRotation = Quaternion.LookRotation(Vector3.forward, attackingVector);
 
 
-            GameObject newBullet = Instantiate(bullet, transform.position, FireballRotation);
+            GameObject newBullet = Instantiate(bullet, firingPoint.position, FireballRotation);
             Rigidbody2D newBulletRB = newBullet.GetComponent<Rigidbody2D>();
             newBulletRB.velocity = attackingVector * projectileVelocity;
 
