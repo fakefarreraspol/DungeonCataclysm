@@ -404,7 +404,6 @@ MonoBehaviour:
   projectileVelocity: 1
   bullet: {fileID: 1800665907}
   projectileLifetime: 10
-  firingPoint: {fileID: 217980608}
 --- !u!114 &75439445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17810,7 +17809,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058400976}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.051, y: -0.105, z: 0}
+  m_LocalPosition: {x: 0.057, y: -0.104, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18218,7 +18217,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1406805622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18245,7 +18244,6 @@ MonoBehaviour:
   projectileVelocity: 5
   bullet: {fileID: 615254155}
   projectileLifetime: 10
-  firingPoint: {fileID: 1058400977}
 --- !u!95 &1406805623
 Animator:
   serializedVersion: 5
@@ -18646,7 +18644,6 @@ MonoBehaviour:
   projectileVelocity: 1
   bullet: {fileID: 1800665907}
   projectileLifetime: 10
-  firingPoint: {fileID: 857626062}
 --- !u!61 &1567571373
 BoxCollider2D:
   m_ObjectHideFlags: 0

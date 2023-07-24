@@ -22,6 +22,6 @@ public class SkeletonArcher : RangedEnemy
 
     private void Shoot()
     {
-        SpawnBullet(enemyTarget.position);
+        SpawnBullet(firingPoint.position, enemyTarget.position);
     }
 }

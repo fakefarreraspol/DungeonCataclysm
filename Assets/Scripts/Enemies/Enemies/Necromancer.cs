@@ -11,7 +11,7 @@ public class Necromancer : RangedEnemy
     }
     protected override void Attack()
     {
-        SpawnBullet(enemyTarget.position);
+        SpawnBullet(firingPoint.position, enemyTarget.position);
         base.Attack();
     }
     protected override void FlipSprite()
