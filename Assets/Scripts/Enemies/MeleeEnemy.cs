@@ -28,7 +28,7 @@ public class MeleeEnemy : Enemy
             else Attack();
         }
 
-        flipAttackingPoint();
+        FlipAttackingPoint();
     }
 
     protected override void Attack()
@@ -52,7 +52,7 @@ public class MeleeEnemy : Enemy
         }
     }
 
-    protected virtual void flipAttackingPoint()
+    protected virtual void FlipAttackingPoint()
     {
         if (enSprRenderer.flipX) attackingPoint.transform.position = (Vector2)transform.position + new Vector2 (-APOffset.x, -APOffset.y);
         else attackingPoint.transform.position = (Vector2)transform.position + new Vector2 (APOffset.x, -APOffset.y);

@@ -24,6 +24,7 @@ public class Room : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(transform.position, new Vector3(width, height, 0));
     }
+    
     public Vector3 GetRoomCenter()
     {
         return new Vector3(X * width, Y * height);

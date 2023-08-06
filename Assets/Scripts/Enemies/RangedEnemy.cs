@@ -57,4 +57,9 @@ public class RangedEnemy : Enemy
             Invoke("DelayBetweenAttacks", rateOfFire);
         }
     }
+    protected virtual void FlipShootingPoint()
+    {
+        //if (enSprRenderer.flipX) attackingPoint.transform.position = (Vector2)transform.position + new Vector2 (-APOffset.x, -APOffset.y);
+        //else attackingPoint.transform.position = (Vector2)transform.position + new Vector2 (APOffset.x, -APOffset.y);
+    }
 }
