@@ -55,6 +55,7 @@ public class Character : MonoBehaviour
             Attack();
             canPlayerAttack = false;
         }
+        if(Input.GetKey(KeyCode.Space)) ReceiveDamage(10);
     }
 
     protected virtual void Attack()

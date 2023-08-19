@@ -10,4 +10,9 @@ public class MenuButtons : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("SampleScene");
     }
+    public void ReplayButton()
+    {
+        //Load First Scene
+        SceneManager.LoadSceneAsync(0);
+    }
 }
