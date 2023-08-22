@@ -15,6 +15,6 @@ MonoBehaviour:
   _health: 20
   _damage: 10
   _rateOfFire: 2
-  _speed: 10
+  _speed: 1
   _cooldown: 1
   _score: 0
