@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (player.chHP <= 0)
+        if (player.GetCharacterDamage() <= 0)
         {
             deathUI.DeathScreenTrigger();
         }

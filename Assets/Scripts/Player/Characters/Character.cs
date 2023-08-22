@@ -4,47 +4,66 @@ using UnityEngine;
 using System;
 using UnityEngine.InputSystem;
 
+
+
 public class Character : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public int chHP;
-    [SerializeField] private int maxHP;
-    public int chDamage;
+    //// STATS OF THE CHARACTER ////
+    private CustomInput userInput = null;
+    [SerializeField] protected CharacterStats character;
+    private int health;
+    private int speed;
+    private int damage;
+    private int rateOfFire;
+    private int cooldown;
 
-
-
-    [SerializeField] protected float attackingROF;
     protected bool isPlayerAttacking = false;
     protected bool canPlayerAttack = true;
-    private CustomInput attackInput = null;
     // Update is called once per frame
     protected Vector2 attackVector = Vector2.zero;
 
     
+    
+    private Rigidbody2D characterRb;
+    private Vector2 moveVector = Vector2.zero;
+    
+    
+
     private void Awake()
     {
-        attackInput = PlayerInput.input;
+        userInput = PlayerInput.input;
+        userInput = PlayerInput.input;
+        characterRb = GetComponent<Rigidbody2D>();
     }
     private void Start()
     {
-        chHP = maxHP;
-        
+        //Inizializing stats
+        health = character.Health;
+        speed = character.Speed;
+        damage = character.Damage;
+        rateOfFire = character.RateOfFire;
+        cooldown = character.Cooldown;
     }
 
     private void OnEnable()
     {
-        attackInput.Enable();
-        attackInput.Player.Shoot.performed += OnAttackInputPerformed;
-        attackInput.Player.Shoot.canceled += OnAttackInputCancelled;
+        userInput.Enable();
+        userInput.Player.Shoot.performed += OnAttackInputPerformed;
+        userInput.Player.Shoot.canceled += OnAttackInputCancelled;
 
         
+        userInput.Player.Movement.performed += OnMovementPerformed;
+        userInput.Player.Movement.canceled += OnMovementStopped;
     }
     private void OnDisable()
     {
-        attackInput.Player.Shoot.performed -= OnAttackInputPerformed;
-        attackInput.Player.Shoot.canceled -= OnAttackInputCancelled;
+        userInput.Disable();
+        userInput.Player.Shoot.performed -= OnAttackInputPerformed;
+        userInput.Player.Shoot.canceled -= OnAttackInputCancelled;
 
         
+        userInput.Player.Movement.performed -= OnMovementPerformed;
+        userInput.Player.Movement.canceled -= OnMovementStopped;
     }
 
 
@@ -55,12 +74,12 @@ public class Character : MonoBehaviour
             Attack();
             canPlayerAttack = false;
         }
-        
+        characterRb.velocity = moveVector * speed;
     }
 
     protected virtual void Attack()
     {
-        Invoke("DelayBetweenAttacks", attackingROF);
+        Invoke("DelayBetweenAttacks", rateOfFire);
 
     }
     protected virtual void UseAbility()
@@ -70,8 +89,8 @@ public class Character : MonoBehaviour
 
     public virtual void ReceiveDamage(int damage)
     {
-        chHP -= damage;
-        if (chHP <= 0)
+        health -= damage;
+        if (health <= 0)
         {
             Die();
         }
@@ -99,5 +118,40 @@ public class Character : MonoBehaviour
         attackVector = Vector2.zero;
 
         isPlayerAttacking = false;
+    }
+
+    public int GetCharacterDamage()
+    {
+        return damage;
+    }
+    public int GetCharacterLife()
+    {
+        return damage;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //Movement
+    private void OnMovementPerformed(InputAction.CallbackContext value)
+    {
+        moveVector = value.ReadValue<Vector2>();
+        PlayerAnimations.OnSpriteChanged(moveVector);
+    }
+
+    private void OnMovementStopped(InputAction.CallbackContext value)
+    {
+        moveVector = Vector2.zero;
+        PlayerAnimations.OnSpriteChanged(moveVector);
     }
 }

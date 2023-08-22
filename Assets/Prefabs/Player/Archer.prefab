@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4350543761063696940}
   - component: {fileID: 1226466126207185903}
   - component: {fileID: 2078796573862665435}
-  - component: {fileID: 3448206841273019179}
   - component: {fileID: 4566058735600584805}
   - component: {fileID: 4199323405258044327}
   - component: {fileID: 9014707717679337709}
@@ -162,19 +161,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.12821811, y: 0.17930862}
   m_EdgeRadius: 0
---- !u!114 &3448206841273019179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8085248769419377058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d540df8ffa909244e81b431911d2489e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 2
 --- !u!114 &4566058735600584805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,10 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a540000eb586fe49b1bdc822bfae0d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chHP: 10
-  maxHP: 20
-  chDamage: 10
-  attackingROF: 0.9
+  character: {fileID: 0}
   arrow: {fileID: 0}
   projectileVelocity: 10
   offset: 0.2

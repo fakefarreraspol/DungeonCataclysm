@@ -163,7 +163,7 @@ public class Enemy : MonoBehaviour
         {
             Destroy(coll.gameObject);
 
-            ReceiveDamage(playerCharacter.chDamage);
+            ReceiveDamage(playerCharacter.GetCharacterDamage());
 
 
         }
