@@ -126,7 +126,7 @@ public class Character : MonoBehaviour
     }
     public int GetCharacterLife()
     {
-        return damage;
+        return health;
     }
 
 
