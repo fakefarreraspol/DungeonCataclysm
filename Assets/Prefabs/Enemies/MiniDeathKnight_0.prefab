@@ -174,16 +174,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4133e4d0fdea596499fa8ec87a8eba4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enName: DeathKnight
-  maxHealthPoints: 100
-  enHealthPoints: 0
-  enSpeed: 500
+  enemyStats: {fileID: 11400000, guid: aed4dff304b0cde4ca839211353284f0, type: 2}
   nextWaypointDistance: 0.2
-  chaseDistance: 3
+  chaseDistance: 50
   attackDistance: 0.5
   rateOfFire: 5
-  enDamage: 10
-  deathTime: 0
   enemyTarget: {fileID: 0}
   attackRange: 0.2
   APOffset: {x: 0.09, y: 0.09}

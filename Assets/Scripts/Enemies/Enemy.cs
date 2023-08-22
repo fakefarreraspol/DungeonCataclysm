@@ -3,22 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using Pathfinding;
-
+using UnityEditor.Experimental.GraphView;
 
 public class Enemy : MonoBehaviour
 {
     [Header("Enemy Stats")]
-    [SerializeField] protected string enName;
-    [SerializeField] protected int maxHealthPoints;
-    [SerializeField] private int enHealthPoints;
-    [SerializeField] protected float enSpeed;
-    [SerializeField] protected float nextWaypointDistance;
-    [SerializeField] protected float chaseDistance;
-    [SerializeField] protected float attackDistance;
-    [SerializeField] protected float rateOfFire;
-    [SerializeField] protected int enDamage;
+    [SerializeField] private EnemyStats enemyStats;
+    protected string enName;
+    protected int maxHealthPoints;
+    private int enHealthPoints;
+    protected float enSpeed;
+    [SerializeField]protected float nextWaypointDistance;
+    [SerializeField]protected float chaseDistance;
+    [SerializeField]protected float attackDistance;
+    [SerializeField]protected float rateOfFire;
+    protected int enDamage;
 
-    [SerializeField] private float deathTime;
+    private float deathTime;
 
 
     [Header("Pathfinding")]
@@ -37,9 +38,8 @@ public class Enemy : MonoBehaviour
     private bool canPathBeChanged = true;
     protected bool canAttack = true;
 
-    protected virtual void Start()
+    private void Awake()
     {
-        enHealthPoints = maxHealthPoints;
         playerCharacter = FindObjectOfType<Character>();
         enemyTarget = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
 
@@ -48,8 +48,18 @@ public class Enemy : MonoBehaviour
 
         seeker = GetComponent<Seeker>();
         enRb = GetComponent<Rigidbody2D>();
+    }
+    protected virtual void Start()
+    {
+        enName = enemyStats.EName;
+        maxHealthPoints = enemyStats.EHealth;
+        enSpeed = enemyStats.ESpeed;
+        //chaseDistance = enemyStats.EChaseDistance;
+        //attackDistance = enemyStats.EAttackDistance;
+        //rateOfFire = enemyStats.ERateOfFire;
+        enDamage = enemyStats.EDamage;
 
-        //InvokeRepeating("SetPath", 0, 1);
+        enHealthPoints = maxHealthPoints;
 
     }
 
@@ -57,6 +67,7 @@ public class Enemy : MonoBehaviour
     {
         Decide();
         Animate();
+        
     }
     protected virtual void Decide()
     {
@@ -79,8 +90,8 @@ public class Enemy : MonoBehaviour
 
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - enRb.position).normalized;
 
-
-        enRb.AddForce(direction * enSpeed * Time.deltaTime);
+        
+        enRb.AddForce(direction * enSpeed);
 
         float distance = Vector2.Distance(transform.position, path.vectorPath[currentWaypoint]);
 
@@ -114,11 +125,11 @@ public class Enemy : MonoBehaviour
     private void Animate()
     {
         //Debug.Log(enRb.velocity.x);
-        if (enRb.velocity.x > 0.1f || enRb.velocity.x < -0.1f) enAnimator.SetBool("isWalking", true);
+        if (enRb.velocity.x > 0.1f || enRb.velocity.x < -0.1f || enRb.velocity.y < -0.1f || enRb.velocity.y > 0.1f) enAnimator.SetBool("isWalking", true);
         else enAnimator.SetBool("isWalking", false);
-        
-        
-        FlipSprite();        
+
+
+        FlipSprite();
     }
     protected virtual void FlipSprite()
     {

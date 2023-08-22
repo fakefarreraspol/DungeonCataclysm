@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a540000eb586fe49b1bdc822bfae0d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 0}
-  arrow: {fileID: 0}
+  character: {fileID: 11400000, guid: b16650aabb29e5c40b862536b43b8e1b, type: 2}
+  arrow: {fileID: 4406404489516378830, guid: 7680d6464f17835488c114332dea6fee, type: 3}
   projectileVelocity: 10
   offset: 0.2

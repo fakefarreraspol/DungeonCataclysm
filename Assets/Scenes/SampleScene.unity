@@ -157,16 +157,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34af91e4fd96a0749b19d99f94d46086, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enName: Necromancer
-  maxHealthPoints: 20
-  enHealthPoints: 10
-  enSpeed: 1
+  enemyStats: {fileID: 0}
   nextWaypointDistance: 0
   chaseDistance: 10
   attackDistance: 0
   rateOfFire: 1
-  enDamage: 10
-  deathTime: 0
   enemyTarget: {fileID: 0}
   projectileVelocity: 1
   bullet: {fileID: 0}
@@ -358,7 +353,7 @@ Transform:
   m_Children:
   - {fileID: 217980608}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &114587549
 GameObject:
@@ -390,7 +385,7 @@ Transform:
   m_Children:
   - {fileID: 1302225542}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &138088459
 GameObject:
@@ -436,7 +431,7 @@ Transform:
   - {fileID: 654738271}
   - {fileID: 446003605}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &173374512
 GameObject:
@@ -618,7 +613,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &173374518
 MonoBehaviour:
@@ -632,16 +627,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 175d81381c020a7429c8c3dbf6563d26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enName: Ghost
-  maxHealthPoints: 100
-  enHealthPoints: 0
-  enSpeed: 500
+  enemyStats: {fileID: 0}
   nextWaypointDistance: 0.2
   chaseDistance: 3
   attackDistance: 0.5
   rateOfFire: 1
-  enDamage: 10
-  deathTime: 0
   enemyTarget: {fileID: 0}
   attackRange: 0
   APOffset: {x: 0, y: 0}
@@ -742,7 +732,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &217980607
 GameObject:
@@ -830,16 +820,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8f62649d2d69b748b070f9883de8913, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enName: DreadKnight
-  maxHealthPoints: 100
-  enHealthPoints: 0
-  enSpeed: 500
+  enemyStats: {fileID: 0}
   nextWaypointDistance: 0.2
   chaseDistance: 3
   attackDistance: 0.5
   rateOfFire: 1
-  enDamage: 10
-  deathTime: 0
   enemyTarget: {fileID: 0}
   attackRange: 0
   APOffset: {x: 0, y: 0}
@@ -1011,7 +996,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &375723475
 PrefabInstance:
@@ -1021,21 +1006,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1226466126207185903, guid: a1c1e0b89277c3d4ea9034abca0c064a, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1226466126207185903, guid: a1c1e0b89277c3d4ea9034abca0c064a, type: 3}
+      propertyPath: m_LinearDrag
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1226466126207185903, guid: a1c1e0b89277c3d4ea9034abca0c064a, type: 3}
+      propertyPath: m_AngularDrag
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8085248769419377058, guid: a1c1e0b89277c3d4ea9034abca0c064a, type: 3}
       propertyPath: m_Name
       value: Archer
       objectReference: {fileID: 0}
     - target: {fileID: 8155699878444779704, guid: a1c1e0b89277c3d4ea9034abca0c064a, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8155699878444779704, guid: a1c1e0b89277c3d4ea9034abca0c064a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.2370119
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 8155699878444779704, guid: a1c1e0b89277c3d4ea9034abca0c064a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.37400657
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8155699878444779704, guid: a1c1e0b89277c3d4ea9034abca0c064a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1112,16 +1109,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d63abf14edba19441841fea92fd43798, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enName: Reaper
-  maxHealthPoints: 100
-  enHealthPoints: 0
-  enSpeed: 500
+  enemyStats: {fileID: 0}
   nextWaypointDistance: 0.2
   chaseDistance: 3
   attackDistance: 0.5
   rateOfFire: 1
-  enDamage: 10
-  deathTime: 0
   enemyTarget: {fileID: 0}
   attackRange: 0
   APOffset: {x: 0, y: 0}
@@ -1314,7 +1306,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &446003604
 GameObject:
@@ -4467,7 +4459,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &619394800
 GameObject:
@@ -4549,7 +4541,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &654738270
 GameObject:
@@ -16899,7 +16891,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &798691678
 MonoBehaviour:
@@ -16941,16 +16933,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db44deef468df6e4c8f317e639962eaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enName: Zombie
-  maxHealthPoints: 100
-  enHealthPoints: 0
-  enSpeed: 500
+  enemyStats: {fileID: 0}
   nextWaypointDistance: 0.2
   chaseDistance: 3
   attackDistance: 0.5
   rateOfFire: 1
-  enDamage: 10
-  deathTime: 0
   enemyTarget: {fileID: 0}
   attackRange: 0
   APOffset: {x: 0, y: 0}
@@ -17187,16 +17174,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3526526a725ac9646832a4d20b9991a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enName: Skeleton Melee
-  maxHealthPoints: 100
-  enHealthPoints: 0
-  enSpeed: 500
+  enemyStats: {fileID: 0}
   nextWaypointDistance: 0.2
   chaseDistance: 3
   attackDistance: 0.5
   rateOfFire: 1
-  enDamage: 10
-  deathTime: 0
   enemyTarget: {fileID: 0}
   attackRange: 0
   APOffset: {x: 0, y: 0}
@@ -17334,6 +17316,79 @@ Transform:
   m_Father: {fileID: 1406805627}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1127269486
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1928415741660031106, guid: 8caf4c65fdfe7234d9d7a6dd9de3c4df, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928415741660031106, guid: 8caf4c65fdfe7234d9d7a6dd9de3c4df, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.6548681
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928415741660031106, guid: 8caf4c65fdfe7234d9d7a6dd9de3c4df, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1331632
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928415741660031106, guid: 8caf4c65fdfe7234d9d7a6dd9de3c4df, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928415741660031106, guid: 8caf4c65fdfe7234d9d7a6dd9de3c4df, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928415741660031106, guid: 8caf4c65fdfe7234d9d7a6dd9de3c4df, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928415741660031106, guid: 8caf4c65fdfe7234d9d7a6dd9de3c4df, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928415741660031106, guid: 8caf4c65fdfe7234d9d7a6dd9de3c4df, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928415741660031106, guid: 8caf4c65fdfe7234d9d7a6dd9de3c4df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928415741660031106, guid: 8caf4c65fdfe7234d9d7a6dd9de3c4df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928415741660031106, guid: 8caf4c65fdfe7234d9d7a6dd9de3c4df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543054095509001646, guid: 8caf4c65fdfe7234d9d7a6dd9de3c4df, type: 3}
+      propertyPath: attackRange
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543054095509001646, guid: 8caf4c65fdfe7234d9d7a6dd9de3c4df, type: 3}
+      propertyPath: chaseDistance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543054095509001646, guid: 8caf4c65fdfe7234d9d7a6dd9de3c4df, type: 3}
+      propertyPath: nextWaypointDistance
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513973441824338487, guid: 8caf4c65fdfe7234d9d7a6dd9de3c4df, type: 3}
+      propertyPath: m_Name
+      value: MiniDeathKnight_0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8caf4c65fdfe7234d9d7a6dd9de3c4df, type: 3}
 --- !u!1 &1244986076
 GameObject:
   m_ObjectHideFlags: 0
@@ -17368,16 +17423,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 300dfad794bd3fe42bc2222abb0482ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enName: ZombieHeavy
-  maxHealthPoints: 100
-  enHealthPoints: 0
-  enSpeed: 500
+  enemyStats: {fileID: 0}
   nextWaypointDistance: 0.2
   chaseDistance: 3
   attackDistance: 0.5
   rateOfFire: 1
-  enDamage: 10
-  deathTime: 0
   enemyTarget: {fileID: 0}
   attackRange: 0
   APOffset: {x: 0, y: 0}
@@ -17570,7 +17620,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1302225541
 GameObject:
@@ -17713,7 +17763,7 @@ RectTransform:
   m_Children:
   - {fileID: 822079637}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -17753,16 +17803,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db372b6f5094c084e9f8785c75c2f379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enName: ArcherSkeleton
-  maxHealthPoints: 20
-  enHealthPoints: 10
-  enSpeed: 1
+  enemyStats: {fileID: 0}
   nextWaypointDistance: 0
   chaseDistance: 10
   attackDistance: 0
   rateOfFire: 1
-  enDamage: 10
-  deathTime: 0
   enemyTarget: {fileID: 0}
   projectileVelocity: 5
   bullet: {fileID: 0}
@@ -17926,7 +17971,7 @@ Transform:
   m_Children:
   - {fileID: 1058400977}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1471555678
 GameObject:
@@ -18097,7 +18142,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1567571370
 GameObject:
@@ -18153,16 +18198,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96905f950105c0249916eae1b3c06923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enName: Lich
-  maxHealthPoints: 20
-  enHealthPoints: 10
-  enSpeed: 1
+  enemyStats: {fileID: 0}
   nextWaypointDistance: 0
   chaseDistance: 10
   attackDistance: 0
   rateOfFire: 1
-  enDamage: 10
-  deathTime: 0
   enemyTarget: {fileID: 0}
   projectileVelocity: 1
   bullet: {fileID: 0}
@@ -18305,7 +18345,7 @@ Transform:
   m_Children:
   - {fileID: 857626062}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1830188197
 GameObject:
@@ -18510,16 +18550,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18e24cd88d170eb45b3907c600abf955, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enName: 
-  maxHealthPoints: 20
-  enHealthPoints: 0
-  enSpeed: 500
+  enemyStats: {fileID: 0}
   nextWaypointDistance: 0.2
   chaseDistance: 3
   attackDistance: 0.5
   rateOfFire: 10
-  enDamage: 1
-  deathTime: 0
   enemyTarget: {fileID: 0}
   attackRange: 0
   APOffset: {x: 0, y: 0}
@@ -18663,7 +18698,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2134989010
 MonoBehaviour:

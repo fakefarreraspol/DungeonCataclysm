@@ -12,22 +12,22 @@ public class Character : MonoBehaviour
     private CustomInput userInput = null;
     [SerializeField] protected CharacterStats character;
     private int health;
-    private int speed;
+    private float speed;
     private int damage;
-    private int rateOfFire;
-    private int cooldown;
+    private float rateOfFire;
+    private float cooldown;
 
     protected bool isPlayerAttacking = false;
     protected bool canPlayerAttack = true;
     // Update is called once per frame
     protected Vector2 attackVector = Vector2.zero;
 
-    
-    
+
+
     private Rigidbody2D characterRb;
     private Vector2 moveVector = Vector2.zero;
-    
-    
+
+
 
     private void Awake()
     {
@@ -51,7 +51,7 @@ public class Character : MonoBehaviour
         userInput.Player.Shoot.performed += OnAttackInputPerformed;
         userInput.Player.Shoot.canceled += OnAttackInputCancelled;
 
-        
+
         userInput.Player.Movement.performed += OnMovementPerformed;
         userInput.Player.Movement.canceled += OnMovementStopped;
     }
@@ -61,7 +61,7 @@ public class Character : MonoBehaviour
         userInput.Player.Shoot.performed -= OnAttackInputPerformed;
         userInput.Player.Shoot.canceled -= OnAttackInputCancelled;
 
-        
+
         userInput.Player.Movement.performed -= OnMovementPerformed;
         userInput.Player.Movement.canceled -= OnMovementStopped;
     }
@@ -75,6 +75,7 @@ public class Character : MonoBehaviour
             canPlayerAttack = false;
         }
         characterRb.velocity = moveVector * speed;
+        
     }
 
     protected virtual void Attack()
