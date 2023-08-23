@@ -15,11 +15,6 @@ public class SkeletonArcher : RangedEnemy
                 SetPath(enemyTarget.position);
                 Move();
             }
-            //else if (enIsAttacking)
-            //{
-            //    canMove = false;
-            //    Attack();
-            //}
             else
             {
                 Attack();
@@ -41,7 +36,6 @@ public class SkeletonArcher : RangedEnemy
 
     private void Shoot()
     {
-        enIsAttacking = false;
         canMove = true;
         SpawnBullet(firingPoint.position, enemyTarget.position);
     }

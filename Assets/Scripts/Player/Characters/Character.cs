@@ -11,7 +11,7 @@ public class Character : MonoBehaviour
     //// STATS OF THE CHARACTER ////
     private CustomInput userInput = null;
     [SerializeField] protected CharacterStats character;
-    private int health;
+    [SerializeField]  private int health;
     private float speed;
     private int damage;
     private float rateOfFire;

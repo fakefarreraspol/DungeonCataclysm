@@ -28,9 +28,15 @@ public class MeleeEnemy : Enemy
             {
                 SetPath(enemyTarget.position);
                 Move();
+                enIsAttacking = false;
             }
-            else Attack();
+            else
+            {
+                enIsAttacking = true;
+                Attack();
+            }
         }
+        else enIsAttacking = false;
 
         if (canAttack) ComputeAttackingPoint();
     }

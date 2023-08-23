@@ -18,6 +18,7 @@ public class Enemy : MonoBehaviour
     protected float enAttackDistance;
     protected float enRateOfFire;
     protected int enDamage;
+    protected float enCooldown;
 
     private float enDeathTime = 1;
 
@@ -41,6 +42,8 @@ public class Enemy : MonoBehaviour
     protected SpriteRenderer enSprRenderer;
     protected bool enIsAttacking = false;
     private bool enIsDead = false;
+    protected bool isAbilityAvailable = true;
+
     private void Awake()
     {
         playerCharacter = FindObjectOfType<Character>();
@@ -61,8 +64,8 @@ public class Enemy : MonoBehaviour
         enAttackDistance = enemyStats.EAttackDistance;
         enRateOfFire = enemyStats.ERateOfFire;
         enDamage = enemyStats.EDamage;
-        enNextWaypointDistance = enemyStats._enNextWaypointDistance;
-
+        enNextWaypointDistance = enemyStats.ENextWaypointDistance;
+        enCooldown = enemyStats.ECooldown;
 
         enHealthPoints = enMaxHealthPoints;
 
@@ -153,7 +156,6 @@ public class Enemy : MonoBehaviour
         if (canAttack)
         {
             canMove = false;
-            enIsAttacking = true;
             enAnimator.SetTrigger("Attack");
             canAttack = false;
             Invoke("ResetAttack", enRateOfFire);
@@ -178,14 +180,28 @@ public class Enemy : MonoBehaviour
     {
         Destroy(enRb);
         Destroy(gameObject.GetComponent<BoxCollider2D>());
-        
-        enSprRenderer.renderingLayerMask=4;
-        
+
+        enSprRenderer.renderingLayerMask = 4;
+
         enIsDead = true;
         enAnimator.SetTrigger("Death");
-        
+
         Destroy(gameObject, enDeathTime);
     }
+
+
+    protected IEnumerator StartEnemyAbilityCooldown()
+    {
+        isAbilityAvailable = false;
+
+        yield return new WaitForSeconds(enCooldown);
+
+        isAbilityAvailable = true;
+    }
+
+
+
+
 
     private void OnTriggerEnter2D(Collider2D coll)
     {
