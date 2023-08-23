@@ -10,23 +10,27 @@ public class Enemy : MonoBehaviour
     [Header("Enemy Stats")]
     [SerializeField] private EnemyStats enemyStats;
     protected string enName;
-    protected int maxHealthPoints;
+    protected int enMaxHealthPoints;
     private int enHealthPoints;
     protected float enSpeed;
-    [SerializeField]protected float nextWaypointDistance;
-    [SerializeField]protected float chaseDistance;
-    [SerializeField]protected float attackDistance;
-    [SerializeField]protected float rateOfFire;
+    protected float enNextWaypointDistance;
+    protected float enChaseDistance;
+    protected float enAttackDistance;
+    protected float enRateOfFire;
     protected int enDamage;
 
-    private float deathTime;
+    private float enDeathTime = 1;
 
+    [Header("Behavior Control")]
+    protected bool canAttack = true;
+    [SerializeField] protected bool canMove = true;
 
     [Header("Pathfinding")]
     protected Path path;
     protected int currentWaypoint = 0;
     protected bool reachedEndOfPath = false;
     protected Seeker seeker;
+    private bool canPathBeChanged = true;
 
     [Header("Utils")]
     [SerializeField] protected Transform enemyTarget;
@@ -35,8 +39,6 @@ public class Enemy : MonoBehaviour
     protected Rigidbody2D enRb;
     protected Animator enAnimator;
     protected SpriteRenderer enSprRenderer;
-    private bool canPathBeChanged = true;
-    protected bool canAttack = true;
 
     private void Awake()
     {
@@ -52,14 +54,16 @@ public class Enemy : MonoBehaviour
     protected virtual void Start()
     {
         enName = enemyStats.EName;
-        maxHealthPoints = enemyStats.EHealth;
+        enMaxHealthPoints = enemyStats.EHealth;
         enSpeed = enemyStats.ESpeed;
-        //chaseDistance = enemyStats.EChaseDistance;
-        //attackDistance = enemyStats.EAttackDistance;
-        //rateOfFire = enemyStats.ERateOfFire;
+        enChaseDistance = enemyStats.EChaseDistance;
+        enAttackDistance = enemyStats.EAttackDistance;
+        enRateOfFire = enemyStats.ERateOfFire;
         enDamage = enemyStats.EDamage;
+        enNextWaypointDistance = enemyStats._nextWaypointDistance;
 
-        enHealthPoints = maxHealthPoints;
+
+        enHealthPoints = enMaxHealthPoints;
 
     }
 
@@ -67,7 +71,7 @@ public class Enemy : MonoBehaviour
     {
         Decide();
         Animate();
-        
+
     }
     protected virtual void Decide()
     {
@@ -78,7 +82,7 @@ public class Enemy : MonoBehaviour
 
     protected void Move()
     {
-
+        if (!canMove) return;
 
         if (path == null) return;
         else if (currentWaypoint >= path.vectorPath.Count)
@@ -90,12 +94,12 @@ public class Enemy : MonoBehaviour
 
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - enRb.position).normalized;
 
-        
+
         enRb.AddForce(direction * enSpeed);
 
         float distance = Vector2.Distance(transform.position, path.vectorPath[currentWaypoint]);
 
-        if (distance < nextWaypointDistance)
+        if (distance < enNextWaypointDistance)
         {
             currentWaypoint++;
         }
@@ -144,7 +148,7 @@ public class Enemy : MonoBehaviour
         {
             enAnimator.SetTrigger("Attack");
             canAttack = false;
-            Invoke("ResetAttack", rateOfFire);
+            Invoke("ResetAttack", enRateOfFire);
         }
     }
 
@@ -165,7 +169,7 @@ public class Enemy : MonoBehaviour
     private void Death()
     {
 
-        Destroy(gameObject, deathTime);
+        Destroy(gameObject, enDeathTime);
     }
 
     private void OnTriggerEnter2D(Collider2D coll)

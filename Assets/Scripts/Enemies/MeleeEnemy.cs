@@ -5,7 +5,7 @@ using UnityEngine;
 public class MeleeEnemy : Enemy
 {
     protected Transform attackingPoint;
-    [SerializeField] protected float attackRange;
+    [SerializeField] protected float attackArea;
     [SerializeField] protected Vector2 APOffset;
 
     [SerializeField] private LayerMask enemyLayers;
@@ -18,9 +18,10 @@ public class MeleeEnemy : Enemy
     }
     protected override void Decide()
     {
-        if (Vector2.Distance(transform.position, enemyTarget.position) < chaseDistance)
+        if(enemyTarget == null) return;
+        if (Vector2.Distance(transform.position, enemyTarget.position) < enChaseDistance)
         {
-            if (Vector2.Distance(transform.position, enemyTarget.position) >= attackDistance)
+            if (Vector2.Distance(transform.position, enemyTarget.position) >= enAttackDistance)
             {
                 SetPath(enemyTarget.position);
                 Move();
@@ -43,7 +44,7 @@ public class MeleeEnemy : Enemy
 
     protected void IsPlayerHit()
     {
-        Collider2D[] hitPlayer = Physics2D.OverlapCircleAll(attackingPoint.position, attackRange, enemyLayers);
+        Collider2D[] hitPlayer = Physics2D.OverlapCircleAll(attackingPoint.position, attackArea, enemyLayers);
         
         foreach(Collider2D enemy in hitPlayer)
         {

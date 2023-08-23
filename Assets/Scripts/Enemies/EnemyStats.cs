@@ -8,12 +8,13 @@ public class EnemyStats : ScriptableObject
     public string _name;
     public int _health;
     public int _damage;
-    public float _rateOfFire;
-    public float _speed;
-    public float _cooldown;
-    public float _chaseDistance;
-    public float _attackDistance;
-    
+    public float _rateOfFire = 0.0f;
+    public float _speed = 0.0f;
+    public float _cooldown = 0.0f;
+    public float _chaseDistance = 0.0f;
+    public float _attackDistance = 0.0f;
+
+    public float _nextWaypointDistance = 0.0f;
 
     public string EName
     {
@@ -55,5 +56,9 @@ public class EnemyStats : ScriptableObject
         get { return _attackDistance; }
         set { _attackDistance = value; }
     }
-    
+    public float ENextWaypointDistance
+    {
+        get { return _nextWaypointDistance; }
+        set { _nextWaypointDistance = value; }
+    }
 }

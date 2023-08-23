@@ -14,7 +14,7 @@ public class RangedEnemy : Enemy
 
     protected override void Start()
     {
-        attackDistance = chaseDistance;
+        enAttackDistance = enChaseDistance;
         firingPoint = gameObject.transform.Find("FiringPoint");
         base.Start();
     }
@@ -54,7 +54,7 @@ public class RangedEnemy : Enemy
 
 
             
-            Invoke("DelayBetweenAttacks", rateOfFire);
+            Invoke("DelayBetweenAttacks", enRateOfFire);
         }
     }
     protected virtual void FlipShootingPoint()

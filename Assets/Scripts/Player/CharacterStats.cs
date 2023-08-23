@@ -7,9 +7,9 @@ public class CharacterStats : ScriptableObject
 {
     public int _health;
     public int _damage;
-    public float _rateOfFire;
-    public int _speed;
-    public float _cooldown;
+    public float _rateOfFire = 0.0f;
+    public float _speed = 0.0f;
+    public float _cooldown = 0.0f;
     public int _score;
 
     public int Health
@@ -27,7 +27,7 @@ public class CharacterStats : ScriptableObject
         get { return _rateOfFire; }
         set { _rateOfFire = value; }
     }
-    public int Speed
+    public float Speed
     {
         get { return _speed; }
         set { _speed = value; }
