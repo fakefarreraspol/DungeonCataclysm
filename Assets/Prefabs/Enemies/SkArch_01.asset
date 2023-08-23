@@ -19,7 +19,7 @@ MonoBehaviour:
   _enSpeed: 20
   _enCooldown: 0
   _enChaseDistance: 10
-  _enAttackDistance: 10
+  _enAttackDistance: 2
   _enNextWaypointDistance: 1
   _enProjectileVelocity: 3
   _enProjectileLifetime: 1
