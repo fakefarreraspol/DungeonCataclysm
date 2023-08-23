@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0fc9ba63dd77454aa0c7df58723417d, type: 3}
   m_Name: ArcherSO
   m_EditorClassIdentifier: 
-  _health: 20
+  _health: 100000
   _damage: 10
   _rateOfFire: 1
-  _speed: 3
+  _speed: 2.5
   _cooldown: 1
   _score: 0
+  _projectileVelocity: 0
+  _projectileLifetime: 0
+  _attackRange: 0

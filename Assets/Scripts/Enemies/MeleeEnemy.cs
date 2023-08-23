@@ -5,20 +5,23 @@ using UnityEngine;
 public class MeleeEnemy : Enemy
 {
     protected Transform attackingPoint;
-    [SerializeField] protected float attackArea;
-    [SerializeField] protected Vector2 APOffset;
+    protected float enAttackArea;
+    protected float enAttackRange;
 
     [SerializeField] private LayerMask enemyLayers;
 
     protected override void Start()
     {
+        enAttackArea = enemyStats.EAttackArea;
+        enAttackRange = enemyStats.EAttackRange;
+
         attackingPoint = gameObject.transform.Find("AttackingPoint");
-        attackingPoint.transform.position = new Vector2(transform.position.x, transform.position.y) + APOffset;
+        attackingPoint.position = transform.position;
         base.Start();
     }
     protected override void Decide()
     {
-        if(enemyTarget == null) return;
+        if (enemyTarget == null) return;
         if (Vector2.Distance(transform.position, enemyTarget.position) < enChaseDistance)
         {
             if (Vector2.Distance(transform.position, enemyTarget.position) >= enAttackDistance)
@@ -29,7 +32,7 @@ public class MeleeEnemy : Enemy
             else Attack();
         }
 
-        FlipAttackingPoint();
+        if (canAttack) ComputeAttackingPoint();
     }
 
     protected override void Attack()
@@ -44,18 +47,21 @@ public class MeleeEnemy : Enemy
 
     protected void IsPlayerHit()
     {
-        Collider2D[] hitPlayer = Physics2D.OverlapCircleAll(attackingPoint.position, attackArea, enemyLayers);
-        
-        foreach(Collider2D enemy in hitPlayer)
+        Collider2D[] hitPlayer = Physics2D.OverlapCircleAll(attackingPoint.position, enAttackArea, enemyLayers);
+
+        foreach (Collider2D enemy in hitPlayer)
         {
             Debug.Log("PlayerIsHit");
             DoDamage(enDamage);
         }
     }
 
-    protected virtual void FlipAttackingPoint()
+    protected virtual void ComputeAttackingPoint()
     {
-        if (enSprRenderer.flipX) attackingPoint.transform.position = (Vector2)transform.position + new Vector2 (-APOffset.x, -APOffset.y);
-        else attackingPoint.transform.position = (Vector2)transform.position + new Vector2 (APOffset.x, -APOffset.y);
+        if (enemyTarget == null) return;
+
+        Vector2 test = enemyTarget.position - transform.position;
+        //attackingPoint.position = ((Vector2)transform.position + test) * enAttackRange;
+        attackingPoint.position = (Vector2)transform.position + (test.normalized * enAttackRange);
     }
 }

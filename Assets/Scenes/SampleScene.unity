@@ -158,10 +158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyStats: {fileID: 0}
-  nextWaypointDistance: 0
-  chaseDistance: 10
-  attackDistance: 0
-  rateOfFire: 1
+  canMove: 1
   enemyTarget: {fileID: 0}
   projectileVelocity: 1
   bullet: {fileID: 0}
@@ -628,12 +625,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyStats: {fileID: 0}
-  nextWaypointDistance: 0.2
-  chaseDistance: 3
-  attackDistance: 0.5
-  rateOfFire: 1
+  canMove: 1
   enemyTarget: {fileID: 0}
-  attackRange: 0
   APOffset: {x: 0, y: 0}
   enemyLayers:
     serializedVersion: 2
@@ -821,12 +814,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyStats: {fileID: 0}
-  nextWaypointDistance: 0.2
-  chaseDistance: 3
-  attackDistance: 0.5
-  rateOfFire: 1
+  canMove: 1
   enemyTarget: {fileID: 0}
-  attackRange: 0
   APOffset: {x: 0, y: 0}
   enemyLayers:
     serializedVersion: 2
@@ -1110,12 +1099,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyStats: {fileID: 0}
-  nextWaypointDistance: 0.2
-  chaseDistance: 3
-  attackDistance: 0.5
-  rateOfFire: 1
+  canMove: 1
   enemyTarget: {fileID: 0}
-  attackRange: 0
   APOffset: {x: 0, y: 0}
   enemyLayers:
     serializedVersion: 2
@@ -16934,12 +16919,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyStats: {fileID: 0}
-  nextWaypointDistance: 0.2
-  chaseDistance: 3
-  attackDistance: 0.5
-  rateOfFire: 1
+  canMove: 1
   enemyTarget: {fileID: 0}
-  attackRange: 0
   APOffset: {x: 0, y: 0}
   enemyLayers:
     serializedVersion: 2
@@ -17175,12 +17156,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyStats: {fileID: 0}
-  nextWaypointDistance: 0.2
-  chaseDistance: 3
-  attackDistance: 0.5
-  rateOfFire: 1
+  canMove: 1
   enemyTarget: {fileID: 0}
-  attackRange: 0
   APOffset: {x: 0, y: 0}
   enemyLayers:
     serializedVersion: 2
@@ -17369,6 +17346,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3543054095509001646, guid: 8caf4c65fdfe7234d9d7a6dd9de3c4df, type: 3}
+      propertyPath: canMove
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543054095509001646, guid: 8caf4c65fdfe7234d9d7a6dd9de3c4df, type: 3}
       propertyPath: attackRange
       value: 0.5
       objectReference: {fileID: 0}
@@ -17380,6 +17361,10 @@ PrefabInstance:
       propertyPath: nextWaypointDistance
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 6030309018944941005, guid: 8caf4c65fdfe7234d9d7a6dd9de3c4df, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 8513973441824338487, guid: 8caf4c65fdfe7234d9d7a6dd9de3c4df, type: 3}
       propertyPath: m_Name
       value: MiniDeathKnight_0
@@ -17424,12 +17409,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyStats: {fileID: 0}
-  nextWaypointDistance: 0.2
-  chaseDistance: 3
-  attackDistance: 0.5
-  rateOfFire: 1
+  canMove: 1
   enemyTarget: {fileID: 0}
-  attackRange: 0
   APOffset: {x: 0, y: 0}
   enemyLayers:
     serializedVersion: 2
@@ -17804,10 +17785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyStats: {fileID: 0}
-  nextWaypointDistance: 0
-  chaseDistance: 10
-  attackDistance: 0
-  rateOfFire: 1
+  canMove: 1
   enemyTarget: {fileID: 0}
   projectileVelocity: 5
   bullet: {fileID: 0}
@@ -18199,10 +18177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyStats: {fileID: 0}
-  nextWaypointDistance: 0
-  chaseDistance: 10
-  attackDistance: 0
-  rateOfFire: 1
+  canMove: 1
   enemyTarget: {fileID: 0}
   projectileVelocity: 1
   bullet: {fileID: 0}
@@ -18551,12 +18526,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyStats: {fileID: 0}
-  nextWaypointDistance: 0.2
-  chaseDistance: 3
-  attackDistance: 0.5
-  rateOfFire: 10
+  canMove: 1
   enemyTarget: {fileID: 0}
-  attackRange: 0
   APOffset: {x: 0, y: 0}
   enemyLayers:
     serializedVersion: 2

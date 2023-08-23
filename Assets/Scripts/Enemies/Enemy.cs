@@ -8,7 +8,7 @@ using UnityEditor.Experimental.GraphView;
 public class Enemy : MonoBehaviour
 {
     [Header("Enemy Stats")]
-    [SerializeField] private EnemyStats enemyStats;
+    [SerializeField] protected EnemyStats enemyStats;
     protected string enName;
     protected int enMaxHealthPoints;
     private int enHealthPoints;
@@ -60,7 +60,7 @@ public class Enemy : MonoBehaviour
         enAttackDistance = enemyStats.EAttackDistance;
         enRateOfFire = enemyStats.ERateOfFire;
         enDamage = enemyStats.EDamage;
-        enNextWaypointDistance = enemyStats._nextWaypointDistance;
+        enNextWaypointDistance = enemyStats._enNextWaypointDistance;
 
 
         enHealthPoints = enMaxHealthPoints;

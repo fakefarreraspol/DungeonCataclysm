@@ -5,12 +5,20 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Character", menuName = "Character")]
 public class CharacterStats : ScriptableObject
 {
+    [Header("Common Stats")]
     public int _health;
     public int _damage;
     public float _rateOfFire = 0.0f;
     public float _speed = 0.0f;
     public float _cooldown = 0.0f;
     public int _score;
+
+    [Header("Ranged Stats")]
+    public float _projectileVelocity = 0.0f;
+    public float _projectileLifetime = 0.0f;
+    
+    [Header("Melee Stats")]
+    public float _attackRange = 0.0f;
 
     public int Health
     {
