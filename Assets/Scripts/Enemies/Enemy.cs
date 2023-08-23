@@ -65,6 +65,10 @@ public class Enemy : MonoBehaviour
 
         enHealthPoints = enMaxHealthPoints;
 
+
+
+        Debug.Log("A " + enName + " has spawned!");
+
     }
 
     private void FixedUpdate()
