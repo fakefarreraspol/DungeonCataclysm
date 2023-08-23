@@ -160,9 +160,7 @@ MonoBehaviour:
   enemyStats: {fileID: 0}
   canMove: 1
   enemyTarget: {fileID: 0}
-  projectileVelocity: 1
   bullet: {fileID: 0}
-  projectileLifetime: 10
 --- !u!114 &75439445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -627,7 +625,6 @@ MonoBehaviour:
   enemyStats: {fileID: 0}
   canMove: 1
   enemyTarget: {fileID: 0}
-  APOffset: {x: 0, y: 0}
   enemyLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -816,7 +813,6 @@ MonoBehaviour:
   enemyStats: {fileID: 0}
   canMove: 1
   enemyTarget: {fileID: 0}
-  APOffset: {x: 0, y: 0}
   enemyLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1101,7 +1097,6 @@ MonoBehaviour:
   enemyStats: {fileID: 0}
   canMove: 1
   enemyTarget: {fileID: 0}
-  APOffset: {x: 0, y: 0}
   enemyLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -16921,7 +16916,6 @@ MonoBehaviour:
   enemyStats: {fileID: 0}
   canMove: 1
   enemyTarget: {fileID: 0}
-  APOffset: {x: 0, y: 0}
   enemyLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -17158,7 +17152,6 @@ MonoBehaviour:
   enemyStats: {fileID: 0}
   canMove: 1
   enemyTarget: {fileID: 0}
-  APOffset: {x: 0, y: 0}
   enemyLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -17274,7 +17267,7 @@ GameObject:
   m_Layer: 7
   m_Name: FiringPoint
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -17369,6 +17362,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MiniDeathKnight_0
       objectReference: {fileID: 0}
+    - target: {fileID: 8513973441824338487, guid: 8caf4c65fdfe7234d9d7a6dd9de3c4df, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17411,7 +17408,6 @@ MonoBehaviour:
   enemyStats: {fileID: 0}
   canMove: 1
   enemyTarget: {fileID: 0}
-  APOffset: {x: 0, y: 0}
   enemyLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -17771,7 +17767,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1406805622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17787,9 +17783,7 @@ MonoBehaviour:
   enemyStats: {fileID: 0}
   canMove: 1
   enemyTarget: {fileID: 0}
-  projectileVelocity: 5
-  bullet: {fileID: 0}
-  projectileLifetime: 10
+  bullet: {fileID: 9011625969908769875, guid: e8ab551bd4a6a3b4b9811cc2a5dbb512, type: 3}
 --- !u!95 &1406805623
 Animator:
   serializedVersion: 5
@@ -18179,9 +18173,7 @@ MonoBehaviour:
   enemyStats: {fileID: 0}
   canMove: 1
   enemyTarget: {fileID: 0}
-  projectileVelocity: 1
   bullet: {fileID: 0}
-  projectileLifetime: 10
 --- !u!61 &1567571373
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18528,7 +18520,6 @@ MonoBehaviour:
   enemyStats: {fileID: 0}
   canMove: 1
   enemyTarget: {fileID: 0}
-  APOffset: {x: 0, y: 0}
   enemyLayers:
     serializedVersion: 2
     m_Bits: 0

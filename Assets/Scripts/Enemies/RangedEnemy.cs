@@ -2,19 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class RangedEnemy : Enemy
 {
     [Header("Ranged Enemy Stats")]
-    [SerializeField] protected float projectileVelocity;
+    protected float projectileVelocity;
     [SerializeField] protected GameObject bullet;
-    [SerializeField] protected float projectileLifetime;
+    protected float projectileLifetime;
 
     protected Transform firingPoint;
 
 
     protected override void Start()
     {
-        enAttackDistance = enChaseDistance;
+        projectileLifetime = enemyStats.EProjectileLifetime;
+        projectileVelocity = enemyStats.EProjectileVelocity;
+
+
         firingPoint = gameObject.transform.Find("FiringPoint");
         base.Start();
     }
@@ -33,29 +37,26 @@ public class RangedEnemy : Enemy
     {
         Vector2 attackingVector = ComputeVector(startPos, destPos).normalized;
 
-        if (canAttack)
-        {
-            Quaternion FireballRotation = Quaternion.LookRotation(Vector3.forward, attackingVector);
+        Quaternion FireballRotation = Quaternion.LookRotation(Vector3.forward, attackingVector);
 
 
-            GameObject newBullet = Instantiate(bullet, startPos, FireballRotation);
-            Rigidbody2D newBulletRB = newBullet.GetComponent<Rigidbody2D>();
-            newBulletRB.velocity = attackingVector * projectileVelocity;
+        GameObject newBullet = Instantiate(bullet, startPos, FireballRotation);
+        Rigidbody2D newBulletRB = newBullet.GetComponent<Rigidbody2D>();
+        newBulletRB.velocity = attackingVector * projectileVelocity;
 
-            BoxCollider2D box = newBullet.AddComponent<BoxCollider2D>();
-            box.isTrigger = true;
-            newBullet.AddComponent<Projectile>().AddProjectileDamage(enDamage);
-
-
-
-            Destroy(newBullet, projectileLifetime);
+        BoxCollider2D box = newBullet.AddComponent<BoxCollider2D>();
+        box.isTrigger = true;
+        newBullet.AddComponent<Projectile>().AddProjectileDamage(enDamage);
 
 
 
+        Destroy(newBullet, projectileLifetime);
 
-            
-            Invoke("DelayBetweenAttacks", enRateOfFire);
-        }
+
+
+
+
+        Invoke("DelayBetweenAttacks", enRateOfFire);
     }
     protected virtual void FlipShootingPoint()
     {

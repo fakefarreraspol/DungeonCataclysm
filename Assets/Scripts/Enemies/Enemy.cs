@@ -33,13 +33,14 @@ public class Enemy : MonoBehaviour
     private bool canPathBeChanged = true;
 
     [Header("Utils")]
-    [SerializeField] protected Transform enemyTarget;
+    protected Transform enemyTarget;
     // References to other Scripts/ Utils
     protected Character playerCharacter;
     protected Rigidbody2D enRb;
     protected Animator enAnimator;
     protected SpriteRenderer enSprRenderer;
-
+    protected bool enIsAttacking = false;
+    private bool enIsDead = false;
     private void Awake()
     {
         playerCharacter = FindObjectOfType<Character>();
@@ -73,6 +74,7 @@ public class Enemy : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (enIsDead) return;
         Decide();
         Animate();
 
@@ -150,6 +152,8 @@ public class Enemy : MonoBehaviour
     {
         if (canAttack)
         {
+            canMove = false;
+            enIsAttacking = true;
             enAnimator.SetTrigger("Attack");
             canAttack = false;
             Invoke("ResetAttack", enRateOfFire);
@@ -172,7 +176,14 @@ public class Enemy : MonoBehaviour
 
     private void Death()
     {
-
+        Destroy(enRb);
+        Destroy(gameObject.GetComponent<BoxCollider2D>());
+        
+        enSprRenderer.renderingLayerMask=4;
+        
+        enIsDead = true;
+        enAnimator.SetTrigger("Death");
+        
         Destroy(gameObject, enDeathTime);
     }
 
@@ -183,8 +194,6 @@ public class Enemy : MonoBehaviour
             Destroy(coll.gameObject);
 
             ReceiveDamage(playerCharacter.GetCharacterDamage());
-
-
         }
     }
 

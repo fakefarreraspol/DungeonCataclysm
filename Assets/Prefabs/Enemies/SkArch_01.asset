@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44e440e17a767ae4c87f5b58590d65fe, type: 3}
-  m_Name: DeathKn_01
+  m_Name: SkArch_01
   m_EditorClassIdentifier: 
-  _enName: Level 01 Death Knight
-  _enHealth: 20
-  _enDamage: 10
-  _enRateOfFire: 2
-  _enSpeed: 10
-  _enCooldown: 1
-  _enChaseDistance: 7
-  _enAttackDistance: 0.5
-  _enNextWaypointDistance: 0.3
-  _enProjectileVelocity: 0
-  _enProjectileLifetime: 0
-  _enAttackArea: 1
-  _enAttackRange: 0.2
+  _enName: Level 1 Skeleton Archer
+  _enHealth: 10
+  _enDamage: 20
+  _enRateOfFire: 3
+  _enSpeed: 20
+  _enCooldown: 0
+  _enChaseDistance: 10
+  _enAttackDistance: 10
+  _enNextWaypointDistance: 1
+  _enProjectileVelocity: 3
+  _enProjectileLifetime: 1
+  _enAttackArea: 0
+  _enAttackRange: 0

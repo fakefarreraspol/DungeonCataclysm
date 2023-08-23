@@ -48,12 +48,13 @@ public class MeleeEnemy : Enemy
     protected void IsPlayerHit()
     {
         Collider2D[] hitPlayer = Physics2D.OverlapCircleAll(attackingPoint.position, enAttackArea, enemyLayers);
-
         foreach (Collider2D enemy in hitPlayer)
         {
             Debug.Log("PlayerIsHit");
             DoDamage(enDamage);
         }
+
+        canMove = true;
     }
 
     protected virtual void ComputeAttackingPoint()
