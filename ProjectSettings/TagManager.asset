@@ -9,6 +9,7 @@ TagManager:
   - PlayerFire
   - Door
   - Enemy
+  - Teleport
   layers:
   - Default
   - TransparentFX
