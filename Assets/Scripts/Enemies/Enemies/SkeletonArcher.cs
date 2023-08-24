@@ -32,11 +32,18 @@ public class SkeletonArcher : RangedEnemy
         if (enemyTarget == null) return;
         if(enemyTarget.transform.position.x > transform.position.x) enSprRenderer.flipX = false;
         else enSprRenderer.flipX = true;
+
+        FlipShootingPoint();
     }
 
     private void Shoot()
     {
         canMove = true;
         SpawnBullet(firingPoint.position, enemyTarget.position);
+    }
+    protected override void FlipShootingPoint()
+    {
+        if (enSprRenderer.flipX == false) firingPoint.position = (Vector2)transform.position + new Vector2(0.2f, 0);
+        else firingPoint.position = (Vector2)transform.position + new Vector2(-0.2f, 0);
     }
 }
