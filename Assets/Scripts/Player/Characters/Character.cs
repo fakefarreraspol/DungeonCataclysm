@@ -112,13 +112,13 @@ public class Character : MonoBehaviour
     {
         attackVector = value.ReadValue<Vector2>();
         isPlayerAttacking = true;
-
+        PlayerAnimations.OnSpriteChanged(attackVector);
     }
     private void OnAttackInputCancelled(InputAction.CallbackContext value)
     {
         attackVector = Vector2.zero;
-
         isPlayerAttacking = false;
+        PlayerAnimations.OnSpriteChanged(attackVector);
     }
 
     public int GetCharacterDamage()
