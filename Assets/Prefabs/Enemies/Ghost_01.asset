@@ -18,7 +18,7 @@ MonoBehaviour:
   _enRateOfFire: 3
   _enSpeed: 5
   _enCooldown: 2
-  _enChaseDistance: 5
+  _enChaseDistance: 3
   _enAttackDistance: 0.5
   _enNextWaypointDistance: 0.3
   _enProjectileVelocity: 0
