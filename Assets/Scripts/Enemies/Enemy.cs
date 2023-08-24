@@ -186,6 +186,8 @@ public class Enemy : MonoBehaviour
         enIsDead = true;
         enAnimator.SetTrigger("Death");
 
+        GameManager.OnEnemyKilled(gameObject);
+
         Destroy(gameObject, enDeathTime);
     }
 

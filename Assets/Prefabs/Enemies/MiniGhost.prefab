@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 461536669678291482}
   m_Layer: 7
   m_Name: MiniGhost
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,7 +36,7 @@ Transform:
   m_Children:
   - {fileID: 485227454013228842}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5001182880574901718
 SpriteRenderer:

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - BaseBullet
   - EnemyFire
+  - PlayerFire
+  - Door
+  - Enemy
   layers:
   - Default
   - TransparentFX
