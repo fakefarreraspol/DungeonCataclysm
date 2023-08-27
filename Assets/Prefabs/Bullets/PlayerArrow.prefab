@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1241980226572920922}
   - component: {fileID: 3070296322955990364}
   - component: {fileID: 5457476197937100418}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PlayerArrow
   m_TagString: BaseBullet
   m_Icon: {fileID: 0}
