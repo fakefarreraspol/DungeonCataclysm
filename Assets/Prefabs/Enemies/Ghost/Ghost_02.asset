@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44e440e17a767ae4c87f5b58590d65fe, type: 3}
-  m_Name: Ghost_01
+  m_Name: Ghost_02
   m_EditorClassIdentifier: 
-  _enName: Level 01 Ghost
-  _enHealth: 30
-  _enDamage: 6
-  _enRateOfFire: 3
-  _enSpeed: 5
+  _enName: Ghost Level 2
+  _enHealth: 20
+  _enDamage: 12
+  _enRateOfFire: 1
+  _enSpeed: 12
   _enCooldown: 2
   _enChaseDistance: 3
   _enAttackDistance: 0.5

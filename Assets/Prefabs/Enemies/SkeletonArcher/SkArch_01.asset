@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44e440e17a767ae4c87f5b58590d65fe, type: 3}
+  m_Name: SkArch_01
+  m_EditorClassIdentifier: 
+  _enName: Level 1 Skeleton Archer
+  _enHealth: 15
+  _enDamage: 10
+  _enRateOfFire: 2
+  _enSpeed: 12
+  _enCooldown: 0
+  _enChaseDistance: 12
+  _enAttackDistance: 3
+  _enNextWaypointDistance: 1
+  _enProjectileVelocity: 3
+  _enProjectileLifetime: 1
+  _enAttackArea: 0
+  _enAttackRange: 0

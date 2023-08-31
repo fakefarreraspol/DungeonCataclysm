@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44e440e17a767ae4c87f5b58590d65fe, type: 3}
-  m_Name: DeathKn_01
+  m_Name: Ghost_01
   m_EditorClassIdentifier: 
-  _enName: Level 01 Death Knight
+  _enName: Level 01 Ghost
   _enHealth: 20
-  _enDamage: 10
-  _enRateOfFire: 2
-  _enSpeed: 10
-  _enCooldown: 1
+  _enDamage: 8
+  _enRateOfFire: 1
+  _enSpeed: 12
+  _enCooldown: 2
   _enChaseDistance: 3
   _enAttackDistance: 0.5
   _enNextWaypointDistance: 0.3
   _enProjectileVelocity: 0
   _enProjectileLifetime: 0
-  _enAttackArea: 1
-  _enAttackRange: 0.2
+  _enAttackArea: 0.3
+  _enAttackRange: 0.3
